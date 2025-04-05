@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
-  <body class="font-yekan text-default-text bg-background w-full">
+  <body class="font-yekan text-default-text bg-background">
     <header>
-      <!-------------- NAVIGATION BAR -------------->
+      <!----------------------------------------->
+      <!------------ NAVIGATION BAR ------------>
+      <!----------------------------------------->
       <nav
-        class="mx-auto flex w-full justify-between py-4 md:w-full md:max-w-7xl md:py-7"
+        class="mx-auto flex w-full justify-between py-4 md:w-full md:max-w-7xl md:px-2 md:py-7"
       >
         <!-- mobile nav button -->
         <svg
@@ -124,6 +126,94 @@
           </li>
         </ul>
       </nav>
+      <!----------------------------------------->
+      <!------------- HERO SECTION ------------->
+      <!----------------------------------------->
+      <section
+        class="mb-8 flex flex-col items-center justify-center bg-linear-(--hero-gradient) pt-20 text-center"
+      >
+        <div
+          class="relative mb-16 flex flex-col items-center justify-end gap-1 md:mb-24"
+        >
+          <h3 class="text-2xl md:text-5xl">تمرکز رو وارد زندگیت کن</h3>
+          <h2 class="text-[1.75rem] font-black md:text-[4rem]">
+            به سمت اهدافت اوج بگیر
+          </h2>
+
+          <div>
+            <svg
+              class="fill-primary absolute -top-7 right-0 md:-right-10 dark:fill-white"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.6178 0.9886C11.0679 -0.329535 12.9321 -0.329531 13.3822 0.9886L15.8334 8.16657L23.0114 10.6178C24.3295 11.0679 24.3295 12.9321 23.0114 13.3822L15.8334 15.8334L13.3822 23.0114C12.9321 24.3295 11.0679 24.3295 10.6178 23.0114L8.16657 15.8334L0.9886 13.3822C-0.329535 12.9321 -0.329532 11.0679 0.9886 10.6178L8.16657 8.16657L10.6178 0.9886Z"
+              />
+            </svg>
+            <svg
+              class="fill-primary absolute -bottom-9 left-2.5 lg:-left-52 dark:fill-white"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.6178 0.9886C11.0679 -0.329535 12.9321 -0.329531 13.3822 0.9886L15.8334 8.16657L23.0114 10.6178C24.3295 11.0679 24.3295 12.9321 23.0114 13.3822L15.8334 15.8334L13.3822 23.0114C12.9321 24.3295 11.0679 24.3295 10.6178 23.0114L8.16657 15.8334L0.9886 13.3822C-0.329535 12.9321 -0.329532 11.0679 0.9886 10.6178L8.16657 8.16657L10.6178 0.9886Z"
+              />
+            </svg>
+            <svg
+              class="stroke-primary absolute -bottom-2 left-[85px] h-[11] w-[108] stroke-[4] md:-bottom-14 md:left-40 md:h-[63px] md:w-[302px] md:rotate-[-2.56deg]"
+              viewBox="0 0 108 11"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.99931 8.78032C1.99931 8.78032 21.2148 3.73979 52.1342 2.87587C83.0537 2.01195 105.585 7.09068 105.585 7.09068"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <p class="mb-10 w-9/10 max-w-80 text-xs md:max-w-4xl md:text-xl">
+          زمان در یک روز برای ما محدود است، اما مهمترین کار این است که چگونه از
+          آن استفاده می‌کنیم. با اپلیکیشن کوییرا لیست، زمان خود را با هدف و
+          برنامه‌ریزی موثر سپری کنید."
+        </p>
+        <div
+          class="mb-10 flex w-9/10 max-w-82 justify-center gap-4 text-xs md:mb-16 md:text-base"
+        >
+          <a
+            class="bg-primary text-on-primary hover:bg-primary-hover basis-39 rounded-lg py-3 font-semibold transition-all duration-300 hover:cursor-pointer md:grow-[11] md:basis-auto"
+            >ورود به اپلیکیشن</a
+          >
+          <a
+            class="text-primary hover:bg-primary-hover hover:text-on-primary basis-39 rounded-lg bg-[#EBF3FF] py-3 font-semibold transition-all duration-300 hover:cursor-pointer md:grow-[9] md:basis-auto dark:bg-[#122549] dark:text-white"
+            >درباره ما</a
+          >
+        </div>
+        <picture
+          class="w-full max-w-xs overflow-hidden md:w-9/10 md:max-w-6xl md:rounded-xl"
+        >
+          <source
+            srcset="../media/images/app-desktop-dark.png"
+            media="(prefers-color-scheme: dark)"
+          />
+          <img
+            class="object-fill"
+            src="../media/images/app-desktop-light.png"
+            alt="تصویر اپلکیشن کوئرا لیست"
+          />
+        </picture>
+      </section>
     </header>
   </body>
 </html>
