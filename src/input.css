@@ -17,6 +17,8 @@
 
   --color-default-text: #141414;
 
+  --hero-gradient: to bottom, #ebf3ff -7.33%, white 76.21%;
+
   --font-yekan: "byekan";
 }
 
@@ -28,5 +30,7 @@
     --color-on-background: #e6e9ef;
     --color-surface: #e6e9ef;
     --color-default-text: #fff;
+    --hero-gradient:
+      to bottom, rgba(2, 103, 255, 0.25) -25.32%, #00000000 88.96%;
   }
 }
