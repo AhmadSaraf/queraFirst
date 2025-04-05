@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: BYekan;
+  src: url(../media/fonts/Yekan.ttf);
+}
+
+@theme {
+  --color-primary: #2c7ef8;
+  --color-primary-hover: #075cd9;
+  --color-on-primary: #ffffff;
+
+  --color-background: #ffffff;
+  --color-on-background: #191c1e;
+  --color-surface: #ffffff;
+
+  --font-yekan: "byekan";
+}
+
+@layer base {
+  @variant dark {
+    --color-primary: #3a86f8;
+    --color-primary-hover: #6ba4fa;
+    --color-background: #040810;
+    --color-on-background: #e6e9ef;
+    --color-surface: #e6e9ef;
+  }
+}
