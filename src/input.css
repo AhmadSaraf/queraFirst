@@ -15,6 +15,8 @@
   --color-on-background: #191c1e;
   --color-surface: #ffffff;
 
+  --color-default-text: #141414;
+
   --font-yekan: "byekan";
 }
 
@@ -25,5 +27,6 @@
     --color-background: #040810;
     --color-on-background: #e6e9ef;
     --color-surface: #e6e9ef;
+    --color-default-text: #fff;
   }
 }
