@@ -14,11 +14,11 @@
       <!------------ NAVIGATION BAR ------------>
       <!----------------------------------------->
       <nav
-        class="mx-auto flex w-full justify-between py-4 md:w-full md:max-w-7xl md:px-2 md:py-7"
+        class="mx-auto flex w-full justify-between px-3 py-4 md:w-full md:max-w-7xl"
       >
         <!-- mobile nav button -->
         <svg
-          class="srtoke-[1.5] hover:stroke-primary stroke-gray-800 md:hidden dark:stroke-white"
+          class="srtoke-[1.5] hover:stroke-primary-hover active:stroke-primary-hover stroke-gray-800 md:hidden"
           width="24"
           height="25"
           viewBox="0 0 24 25"
@@ -41,17 +41,23 @@
             </h1>
           </li>
           <li class="hidden md:block">
-            <a href="#" class="hover:text-primary hidden font-semibold md:block"
+            <a
+              href="#"
+              class="hover:text-primary-hover active:text-primary-hover hidden font-semibold md:block"
               >صفحه اصلی</a
             >
           </li>
           <li class="hidden md:block">
-            <a href="#" class="hover:text-primary hidden font-semibold md:block"
+            <a
+              href="#"
+              class="hover:text-primary-hover active:text-primary-hover hidden font-semibold md:block"
               >درباره ما</a
             >
           </li>
           <li class="hidden md:block">
-            <a href="#" class="hover:text-primary hidden font-semibold md:block"
+            <a
+              href="#"
+              class="hover:text-primary-hover active:text-primary-hover hidden font-semibold md:block"
               >ارتباط با ما</a
             >
           </li>
@@ -60,7 +66,7 @@
           <li class="hidden md:block">
             <a
               href="#"
-              class="bg-primary hover:bg-primary-hover rounded-md px-6 py-3 text-white transition-all duration-300 hover:cursor-pointer"
+              class="bg-primary hover:bg-primary-hover active:bg-primary-hover rounded-md px-6 py-3 text-white transition-all duration-300 hover:cursor-pointer"
               >ورود به اپلیکیشن</a
             >
           </li>
@@ -69,7 +75,7 @@
               class="group flex h-10 w-10 items-center justify-center rounded-md border border-gray-200 hover:cursor-pointer dark:border-gray-800"
             >
               <svg
-                class="group-hover:fill-primary-hover fill-gray-500 dark:hidden"
+                class="group-hover:fill-primary-hover group-active:fill-primary-hover fill-gray-500 dark:hidden"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -109,7 +115,7 @@
               </svg>
 
               <svg
-                class="group-hover:fill-primary-hover mb-0.25 hidden fill-gray-300 dark:block"
+                class="group-hover:fill-icons-primary-hover mb-0.25 hidden fill-gray-300 dark:block"
                 width="20"
                 height="21"
                 viewBox="0 0 20 21"
@@ -130,7 +136,7 @@
       <!------------- HERO SECTION ------------->
       <!----------------------------------------->
       <section
-        class="mb-8 flex flex-col items-center justify-center bg-linear-(--hero-gradient) pt-20 text-center"
+        class="mb-8 flex flex-col items-center justify-center bg-linear-(--hero-gradient) pt-20 text-center md:mb-16"
       >
         <div
           class="relative mb-16 flex flex-col items-center justify-end gap-1 md:mb-24"
@@ -142,7 +148,7 @@
 
           <div>
             <svg
-              class="fill-primary absolute -top-7 right-0 md:-right-10 dark:fill-white"
+              class="fill-icons-primary absolute -top-7 right-0 md:-right-10"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -156,7 +162,7 @@
               />
             </svg>
             <svg
-              class="fill-primary absolute -bottom-9 left-2.5 lg:-left-52 dark:fill-white"
+              class="fill-icons-primary absolute -bottom-9 left-2.5 lg:-left-52"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -170,7 +176,7 @@
               />
             </svg>
             <svg
-              class="stroke-primary absolute -bottom-2 left-[85px] h-[11] w-[108] stroke-[4] md:-bottom-14 md:left-40 md:h-[63px] md:w-[302px] md:rotate-[-2.56deg]"
+              class="stroke-icons-primary absolute -bottom-2 left-[85px] h-[11] w-[108] stroke-[4] md:-bottom-14 md:left-40 md:h-[63px] md:w-[302px] md:rotate-[-2.56deg]"
               viewBox="0 0 108 11"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -192,11 +198,11 @@
           class="mb-10 flex w-9/10 max-w-82 justify-center gap-4 text-xs md:mb-16 md:text-base"
         >
           <a
-            class="bg-primary text-on-primary hover:bg-primary-hover basis-39 rounded-lg py-3 font-semibold transition-all duration-300 hover:cursor-pointer md:grow-[11] md:basis-auto"
+            class="bg-primary text-on-primary hover:bg-primary-hover active:bg-primary-hover basis-39 rounded-lg py-3 font-semibold transition-all duration-300 hover:cursor-pointer md:grow-[11] md:basis-auto"
             >ورود به اپلیکیشن</a
           >
           <a
-            class="text-primary hover:bg-primary-hover hover:text-on-primary basis-39 rounded-lg bg-[#EBF3FF] py-3 font-semibold transition-all duration-300 hover:cursor-pointer md:grow-[9] md:basis-auto dark:bg-[#122549] dark:text-white"
+            class="text-primary hover:bg-primary-hover active:bg-primary-hover active:text-on-primary hover:text-on-primary basis-39 rounded-lg bg-[#EBF3FF] py-3 font-semibold transition-all duration-300 hover:cursor-pointer md:grow-[9] md:basis-auto dark:bg-[#122549] dark:text-white"
             >درباره ما</a
           >
         </div>
@@ -215,5 +221,203 @@
         </picture>
       </section>
     </header>
+    <main>
+      <!----------------------------------------->
+      <!---------- QUERA APP FEATURES ---------->
+      <!----------------------------------------->
+      <section class="mx-auto mb-10 flex flex-col items-center gap-6 md:gap-12">
+        <div
+          class="flex max-w-78 flex-col items-center gap-2 text-center md:max-w-135 md:gap-6"
+        >
+          <h2 class="text-on-background text-xl font-semibold md:text-4xl">
+            ویژگی‌های اپلیکیشن کوئرالیست
+          </h2>
+          <p
+            class="text-[0.625rem] text-gray-500 md:text-base dark:text-[#e6e6e6]"
+          >
+            زمان در یک روز برای ما محدود است، اما مهمترین کار این است که چگونه
+            از آن استفاده می‌کنیم. با اپلیکیشن کوییرا لیست، زمان خود را با هدف و
+            برنامه‌ریزی موثر سپری کنید."
+          </p>
+        </div>
+        <!-- FEATURES GRID BOX -->
+        <div
+          class="text-tiny grid grid-cols-2 gap-4 text-center text-gray-500 md:gap-6 md:text-sm/[30px] lg:grid-cols-4 dark:text-[#F0F0F0]"
+        >
+          <!-- feature 1 -->
+          <figure
+            class="bg-card-bg border-card-border shadow-card flex min-h-40 w-full max-w-40 flex-col items-center justify-center gap-4 rounded-3xl border md:min-h-65 md:max-w-65"
+          >
+            <figure class="bg-card-icons-bg rounded-full p-3">
+              <svg
+                class="stroke-icons-primary h-4 w-4 md:h-6 md:w-6"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_46_3455)">
+                  <path
+                    d="M7.3125 1.33301H5.97917C2.64583 1.33301 1.3125 2.66634 1.3125 5.99967V9.99967C1.3125 13.333 2.64583 14.6663 5.97917 14.6663H9.97917C13.3125 14.6663 14.6458 13.333 14.6458 9.99967V8.66634"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.5824 2.37315C13.7624 4.41982 11.7024 7.20649 9.9824 8.58649L8.92906 9.42649C8.79573 9.52649 8.6624 9.60649 8.50906 9.66649C8.50906 9.56649 8.5024 9.46649 8.48906 9.35982C8.42906 8.91315 8.22906 8.49315 7.86906 8.13982C7.5024 7.77315 7.0624 7.56649 6.60906 7.50649C6.5024 7.49982 6.39573 7.49315 6.28906 7.49982C6.34906 7.33315 6.43573 7.17982 6.54906 7.05315L7.38906 5.99982C8.76906 4.27982 11.5624 2.20649 13.6024 1.38649C13.9157 1.26649 14.2224 1.35982 14.4157 1.55315C14.6157 1.75315 14.7091 2.05982 14.5824 2.37315Z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.51485 9.66064C8.51485 10.2473 8.28819 10.8073 7.86819 11.234C7.54152 11.5606 7.10152 11.7873 6.57485 11.854L5.26152 11.994C4.54819 12.074 3.93485 11.4673 4.01485 10.7406L4.15485 9.42731C4.28152 8.26064 5.25485 7.51397 6.29485 7.49397C6.40152 7.48731 6.50819 7.49397 6.61485 7.50064C7.06819 7.56064 7.50819 7.76731 7.87485 8.13397C8.23485 8.49397 8.43485 8.90731 8.49485 9.35397C8.50819 9.46064 8.51485 9.56731 8.51485 9.66064Z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.5501 7.98663C10.5501 6.59329 9.42344 5.45996 8.02344 5.45996"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_46_3455">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </figure>
+
+            <div class="flex flex-col items-center gap-2.5 md:gap-4">
+              <h3
+                class="text-card-heading text-xs font-bold md:text-xl dark:text-white"
+              >
+                رابط کاربری جذاب
+              </h3>
+              <p class="mx-6 md:mx-12">
+                اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
+              </p>
+            </div>
+          </figure>
+          <!-- feature 2 -->
+          <figure
+            class="bg-card-bg border-card-border shadow-card flex min-h-40 w-full max-w-40 flex-col items-center justify-center gap-4 rounded-3xl border md:min-h-65 md:max-w-65"
+          >
+            <figure class="bg-card-icons-bg rounded-full p-3">
+              <svg
+                class="stroke-icons-primary h-4 w-4 md:h-6 md:w-6"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.3335 6.66671H4.66683C6.00016 6.66671 6.66683 6.00004 6.66683 4.66671V3.33337C6.66683 2.00004 6.00016 1.33337 4.66683 1.33337H3.3335C2.00016 1.33337 1.3335 2.00004 1.3335 3.33337V4.66671C1.3335 6.00004 2.00016 6.66671 3.3335 6.66671Z"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M11.3335 6.66671H12.6668C14.0002 6.66671 14.6668 6.00004 14.6668 4.66671V3.33337C14.6668 2.00004 14.0002 1.33337 12.6668 1.33337H11.3335C10.0002 1.33337 9.3335 2.00004 9.3335 3.33337V4.66671C9.3335 6.00004 10.0002 6.66671 11.3335 6.66671Z"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M11.3335 14.6667H12.6668C14.0002 14.6667 14.6668 14 14.6668 12.6667V11.3334C14.6668 10 14.0002 9.33337 12.6668 9.33337H11.3335C10.0002 9.33337 9.3335 10 9.3335 11.3334V12.6667C9.3335 14 10.0002 14.6667 11.3335 14.6667Z"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3.3335 14.6667H4.66683C6.00016 14.6667 6.66683 14 6.66683 12.6667V11.3334C6.66683 10 6.00016 9.33337 4.66683 9.33337H3.3335C2.00016 9.33337 1.3335 10 1.3335 11.3334V12.6667C1.3335 14 2.00016 14.6667 3.3335 14.6667Z"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </figure>
+            <div class="flex flex-col items-center gap-2.5 md:gap-4">
+              <h3
+                class="text-card-heading text-xs font-bold md:text-xl dark:text-white"
+              >
+                قابلیت دسته‌بندی کارها
+              </h3>
+              <p class="mx-6 md:mx-12">
+                اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
+              </p>
+            </div>
+          </figure>
+          <!-- feature 3 -->
+          <figure
+            class="bg-card-bg border-card-border shadow-card flex min-h-40 w-full max-w-40 flex-col items-center justify-center gap-4 rounded-3xl border md:min-h-65 md:max-w-65"
+          >
+            <figure class="bg-card-icons-bg rounded-full p-3">
+              <svg
+                class="stroke-icons-primary h-4 w-4 md:h-6 md:w-6"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.4133 5.66004C3.72664 -0.113291 12.28 -0.106624 13.5866 5.66671C14.3533 9.05338 12.2466 11.92 10.4 13.6934C9.05997 14.9867 6.93997 14.9867 5.5933 13.6934C3.7533 11.92 1.64664 9.04671 2.4133 5.66004Z"
+                />
+                <path
+                  d="M6.1665 7.66667L7.1665 8.66667L9.83317 6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </figure>
+            <div class="flex flex-col items-center gap-2.5 md:gap-4">
+              <h3
+                class="text-card-heading text-xs font-bold md:text-xl dark:text-white"
+              >
+                دسترسی آسان
+              </h3>
+              <p class="mx-6 md:mx-12">
+                اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
+              </p>
+            </div>
+          </figure>
+          <!-- feature 4 -->
+          <figure
+            class="bg-card-bg border-card-border shadow-card flex min-h-40 w-full max-w-40 flex-col items-center justify-center gap-4 rounded-3xl border md:min-h-65 md:max-w-65"
+          >
+            <figure class="bg-card-icons-bg rounded-full p-3">
+              <svg
+                class="stroke-icons-primary h-4 w-4 md:h-6 md:w-6"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 12.5734H11.4933C10.96 12.5734 10.4533 12.78 10.08 13.1534L8.93998 14.28C8.41998 14.7934 7.57334 14.7934 7.05334 14.28L5.91333 13.1534C5.54 12.78 5.02667 12.5734 4.5 12.5734H4C2.89333 12.5734 2 11.6867 2 10.5934V3.31337C2 2.22004 2.89333 1.33337 4 1.33337H12C13.1067 1.33337 14 2.22004 14 3.31337V10.5867C14 11.68 13.1067 12.5734 12 12.5734Z"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.04671 5.9667C8.02005 5.9667 7.98003 5.9667 7.9467 5.9667C7.2467 5.94003 6.69336 5.37337 6.69336 4.6667C6.69336 3.9467 7.27337 3.3667 7.99337 3.3667C8.71337 3.3667 9.29338 3.95337 9.29338 4.6667C9.30004 5.37337 8.74671 5.9467 8.04671 5.9667Z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M6.16646 7.97339C5.2798 8.56672 5.2798 9.53339 6.16646 10.1267C7.17313 10.8001 8.82646 10.8001 9.83313 10.1267C10.7198 9.53339 10.7198 8.56672 9.83313 7.97339C8.82646 7.30672 7.1798 7.30672 6.16646 7.97339Z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </figure>
+            <div class="flex flex-col items-center gap-2.5 md:gap-4">
+              <h3
+                class="text-card-heading text-xs font-bold md:text-xl dark:text-white"
+              >
+                پشتیبانی آنلاین
+              </h3>
+              <p class="mx-6 md:mx-12">
+                اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
+              </p>
+            </div>
+          </figure>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
