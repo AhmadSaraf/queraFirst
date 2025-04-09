@@ -5,11 +5,36 @@
   font-family: BYekan;
   src: url(../media/fonts/Yekan.ttf);
 }
+@font-face {
+  font-family: Yekan;
+  src: url(../media/fonts/Iran\ Yekan/IRANYekanWebBlack.woff2);
+  src: url(../media/fonts/Iran\ Yekan/IRANYekanWebBold.woff2);
+  src: url(../media/fonts/Iran\ Yekan/IRANYekanWebExtraBlack.woff2);
+  src: url(../media/fonts/Iran\ Yekan/IRANYekanWebExtraBold.woff2);
+  src: url(../media/fonts/Iran\ Yekan/IRANYekanWebLight.woff2);
+  src: url(../media/fonts/Iran\ Yekan/IRANYekanWebMedium.woff2);
+  src: url(../media/fonts/Iran\ Yekan/IRANYekanWebRegular.woff2);
+  src: url(../media/fonts/Iran\ Yekan/IRANYekanWebThin.woff2);
+}
+
+@font-face {
+  font-family: Morabba;
+  src: url(../media/fonts/Morabba/Morabba-Black.woff2);
+  src: url(../media/fonts/Morabba/Morabba-Bold.woff2);
+  src: url(../media/fonts/Morabba/Morabba-ExtraBold.woff2);
+  src: url(../media/fonts/Morabba/Morabba-Heavy.woff2);
+  src: url(../media/fonts/Morabba/Morabba-Light.woff2);
+  src: url(../media/fonts/Morabba/Morabba-Medium.woff2);
+  src: url(../media/fonts/Morabba/Morabba-Regular.woff2);
+  src: url(../media/fonts/Morabba/Morabba-SemiBold.woff2);
+  src: url(../media/fonts/Morabba/Morabba-UltraLight.woff2);
+}
 
 @theme {
   /* font */
   --text-tiny: 0.625rem;
-  --font-yekan: "byekan";
+  --font-yekan: "Yekan";
+  --font-morabba: "Morabba";
 
   /* general */
   --color-primary: #2c7ef8;
