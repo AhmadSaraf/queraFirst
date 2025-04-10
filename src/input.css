@@ -30,11 +30,18 @@
   src: url(../media/fonts/Morabba/Morabba-UltraLight.woff2);
 }
 
+@font-face {
+  font-family: Morraba;
+  src: url(../assets/Fonts/Morabba-SemiBold.woff2) format("woff2");
+  font-weight: 600;
+}
+
+
 @theme {
   /* font */
   --text-tiny: 0.625rem;
-  --font-yekan: "Yekan";
-  --font-morabba: "Morabba";
+  --font-yekan: "byekan";
+  --font-morraba: "Morraba";
 
   /* general */
   --color-primary: #2c7ef8;
@@ -50,6 +57,7 @@
   --color-card-bg: transparent;
   --color-card-heading: #070d31;
   --color-card-text: #444749;
+  --color-card-text-light: #5c5c5c;
   --color-card-text-dark: #575757;
   --color-card-border: #f5f6f8;
   --color-card-icons-bg: #f5fbff;
@@ -72,8 +80,8 @@
     --color-background: #040810;
     --color-on-background: #e6e9ef;
     --color-surface: #e6e9ef;
-    --color-default-text: #fff;
-    --color-icons-primary: #fff;
+    --color-default-text: #ffffff;
+    --color-icons-primary: #ffffff;
 
     /* cards */
     --color-card-bg: #0b192d;
