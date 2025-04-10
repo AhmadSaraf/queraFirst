@@ -36,6 +36,7 @@
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
     --font-weight-black: 900;
+    --leading-loose: 2;
     --radius-md: 0.375rem;
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
@@ -266,6 +267,18 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .-mb-0\.5 {
+    margin-bottom: calc(var(--spacing) * -0.5);
+  }
+  .-mb-1 {
+    margin-bottom: calc(var(--spacing) * -1);
+  }
+  .-mb-2 {
+    margin-bottom: calc(var(--spacing) * -2);
+  }
+  .-mb-3 {
+    margin-bottom: calc(var(--spacing) * -3);
+  }
   .mb-0\.25 {
     margin-bottom: calc(var(--spacing) * 0.25);
   }
@@ -377,6 +390,9 @@
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
   .gap-7 {
     gap: calc(var(--spacing) * 7);
   }
@@ -484,6 +500,9 @@
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
@@ -492,6 +511,9 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
   }
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
@@ -537,9 +559,6 @@
   }
   .text-\[1\.75rem\] {
     font-size: 1.75rem;
-  }
-  .text-\[2rem\] {
-    font-size: 2rem;
   }
   .text-tiny {
     font-size: var(--text-tiny);
@@ -718,6 +737,11 @@
       margin-top: calc(var(--spacing) * 15);
     }
   }
+  .md\:-mb-3 {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * -3);
+    }
+  }
   .md\:mb-16 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 16);
@@ -828,6 +852,11 @@
       grid-template-rows: repeat(2,auto);
     }
   }
+  .md\:gap-1 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 1);
+    }
+  }
   .md\:gap-4 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 4);
@@ -848,9 +877,14 @@
       gap: calc(var(--spacing) * 12);
     }
   }
-  .md\:rounded-2xl {
+  .md\:gap-\[-1rem\] {
     @media (width >= 48rem) {
-      border-radius: var(--radius-2xl);
+      gap: -1rem;
+    }
+  }
+  .md\:gap-\[-3rem\] {
+    @media (width >= 48rem) {
+      gap: -3rem;
     }
   }
   .md\:rounded-3xl {
@@ -874,6 +908,11 @@
       background-color: #F9FAFB;
     }
   }
+  .md\:bg-\[rgb\(249\,250\,251\)\] {
+    @media (width >= 48rem) {
+      background-color: rgb(249,250,251);
+    }
+  }
   .md\:bg-card-bg {
     @media (width >= 48rem) {
       background-color: var(--color-card-bg);
@@ -887,6 +926,11 @@
   .md\:p-0 {
     @media (width >= 48rem) {
       padding: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:p-8 {
+    @media (width >= 48rem) {
+      padding: calc(var(--spacing) * 8);
     }
   }
   .md\:px-10 {
@@ -933,6 +977,12 @@
       line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
+  .md\:text-lg\/loose {
+    @media (width >= 48rem) {
+      font-size: var(--text-lg);
+      line-height: var(--leading-loose);
+    }
+  }
   .md\:text-sm\/\[30px\] {
     @media (width >= 48rem) {
       font-size: var(--text-sm);
@@ -977,6 +1027,26 @@
       left: calc(var(--spacing) * -52);
     }
   }
+  .lg\:mt-15 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 15);
+    }
+  }
+  .lg\:grid-cols-2 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-rows-\[repeat\(2\,auto\)\] {
+    @media (width >= 64rem) {
+      grid-template-rows: repeat(2,auto);
+    }
+  }
+  .lg\:gap-8 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 8);
+    }
+  }
   .xl\:grid-cols-4 {
     @media (width >= 80rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1002,9 +1072,19 @@
       border-color: var(--color-gray-800);
     }
   }
+  .dark\:bg-\[\#0E1E34\] {
+    &:where(.dark, .dark *) {
+      background-color: #0E1E34;
+    }
+  }
   .dark\:bg-\[\#122549\] {
     &:where(.dark, .dark *) {
       background-color: #122549;
+    }
+  }
+  .dark\:text-\[\#ACACAC\] {
+    &:where(.dark, .dark *) {
+      color: #ACACAC;
     }
   }
   .dark\:text-\[\#F0F0F0\] {
