@@ -1062,6 +1062,11 @@
       width: calc(9/10 * 100%);
     }
   }
+  .md\:w-95\/100 {
+    @media (width >= 48rem) {
+      width: calc(95/100 * 100%);
+    }
+  }
   .md\:w-\[302px\] {
     @media (width >= 48rem) {
       width: 302px;
@@ -1521,6 +1526,13 @@
     &:where(.dark, .dark *) {
       --tw-content: url(../media/images/app-desktop-dark.png);
       content: var(--tw-content);
+    }
+  }
+  .md\:dark\:bg-\[\#0E1E34\] {
+    @media (width >= 48rem) {
+      &:where(.dark, .dark *) {
+        background-color: #0E1E34;
+      }
     }
   }
 }
