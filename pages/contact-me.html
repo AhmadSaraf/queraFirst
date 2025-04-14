@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../src/style.css" />
+    <script src="../src/index.js" defer></script>
     <title>تماس با من</title>
   </head>
   <body class="font-yekan text-default-text bg-background">
     <header>
+      <!----------------------------------------->
+      <!------------ NAVIGATION BAR ------------>
+      <!----------------------------------------->
       <nav
         class="mx-auto flex w-full justify-between px-3 py-4 md:w-full md:max-w-7xl"
       >
         <!-- mobile nav button -->
         <svg
-          class="srtoke-[1.5] hover:stroke-primary-hover active:stroke-primary-hover stroke-gray-800 md:hidden"
+          class="srtoke-[1.5] hover:stroke-primary-hover active:stroke-primary-hover stroke-gray-800 md:hidden dark:stroke-white"
           width="24"
           height="25"
           viewBox="0 0 24 25"
@@ -57,17 +61,17 @@
             >
           </li>
         </ul>
-        <ul class="flex items-center gap-4">
-          <li class="hidden md:block">
+        <ul class="flex min-w-6 items-center gap-4">
+          <li class="hidden shrink-0 md:block">
             <a
               href="#"
-              class="bg-primary hover:bg-primary-hover active:bg-primary-hover rounded-md px-6 py-3 text-white transition-all duration-300 hover:cursor-pointer"
+              class="bg-primary hover:bg-primary-hover active:bg-primary-hover rounded-md p-2 text-white transition-all duration-300 hover:cursor-pointer"
               >ورود به اپلیکیشن</a
             >
           </li>
-          <li class="hidden md:block">
+          <li class="theme-switch hidden shrink-0 md:block">
             <figure
-              class="group flex h-10 w-10 items-center justify-center rounded-md border border-gray-200 hover:cursor-pointer dark:border-gray-800"
+              class="group flex items-center justify-center rounded-md border border-gray-200 p-2 hover:cursor-pointer dark:border-gray-800"
             >
               <svg
                 class="group-hover:fill-primary-hover group-active:fill-primary-hover fill-gray-500 dark:hidden"
@@ -110,7 +114,7 @@
               </svg>
 
               <svg
-                class="group-hover:fill-icons-primary-hover mb-0.25 hidden fill-gray-300 dark:block"
+                class="group-hover:fill-primary-hover group-active:fill-primary-hover mb-0.25 hidden fill-gray-300 dark:block"
                 width="20"
                 height="21"
                 viewBox="0 0 20 21"
@@ -217,6 +221,141 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <!----------------------------------------->
+    <!---------- Footer ---------->
+    <!----------------------------------------->
+
+    <footer
+      class="text-footer-text relative mx-auto flex w-9/10 max-w-100 flex-col items-center justify-center py-10 md:w-2/3 md:max-w-300 md:gap-12 lg:w-2/3"
+    >
+      <!-- Top Section with Logo -->
+      <div
+        id="top-footer"
+        class="flex w-full items-center justify-center gap-5 overflow-hidden pb-10 text-center"
+      >
+        <img
+          src="../assets/images/Vector 24.png"
+          alt="side-line"
+          class="h-0.5"
+        />
+        <h2 class="font-morraba text-lg font-semibold md:text-xl">کوثرالیست</h2>
+        <img
+          src="../assets/images/Vector 24.png"
+          alt="side-line"
+          class="h-0.5"
+        />
+      </div>
+
+      <!-- Main Footer Content -->
+      <div
+        id="main-footer"
+        class="grid grid-cols-1 text-right lg:grid-cols-2 lg:gap-120"
+      >
+        <!-- Left Column - Contact Info -->
+        <div
+          class="order-2 grid w-full grid-cols-2 gap-4 md:flex md:flex-col md:gap-6"
+        >
+          <!-- <div class="md:space-y-6 order-1 space-y-4"> -->
+          <!-- Fax -->
+          <div
+            class="bg-card-bg shadow-card border-card-border flex items-center gap-3 rounded-xl border-2 px-4 py-7 md:border-0 md:p-0 md:shadow-none"
+          >
+            <div
+              class="bg-card-icons-bg shrink-0 rounded-full p-2 md:bg-transparent"
+            >
+              <img
+                src="../assets/icons/vuesax/bold/Vector (1).png"
+                alt="fax"
+                class="h-4 w-4 md:h-6 md:w-6 lg:brightness-0 dark:brightness-1000"
+              />
+            </div>
+            <a href="tel:+982144445566" class="text-tiny md:text-base"
+              ><span>فکس: </span> <span>44445566-021</span></a
+            >
+          </div>
+
+          <!-- Phone -->
+          <div
+            class="bg-card-bg shadow-card border-card-border flex items-center gap-3 rounded-xl border-2 px-4 py-7 md:border-0 md:p-0 md:shadow-none"
+          >
+            <div
+              class="bg-card-icons-bg shrink-0 rounded-full p-2 md:bg-transparent"
+            >
+              <img
+                src="../assets/icons/vuesax/bold/call.svg"
+                alt="phone"
+                class="h-4 w-4 md:h-6 md:w-6 lg:brightness-0 dark:brightness-1000"
+              />
+            </div>
+            <a href="tel:+982144445566" class="text-tiny md:text-base"
+              ><span>تلفن پشتیبانی: </span> <span>44445566-021</span></a
+            >
+          </div>
+          <!-- </div> -->
+
+          <!-- Address -->
+          <div
+            class="bg-card-bg shadow-card border-card-border row-start-1 row-end-3 flex flex-col items-center justify-center gap-3 rounded-xl border-2 p-4 text-center md:flex-row md:items-start md:border-0 md:p-0 md:text-right md:shadow-none"
+          >
+            <div
+              class="bg-card-icons-bg mt-1 shrink-0 rounded-full p-2 md:bg-transparent"
+            >
+              <img
+                src="../assets/icons/vuesax/bold/location.svg"
+                alt="location"
+                class="h-4 w-4 md:h-6 md:w-6 lg:brightness-0 dark:brightness-1000"
+              />
+            </div>
+            <a
+              href="https://maps.app.goo.gl/iL6TKCJqPA7va1Nx7"
+              target="_blank"
+              class="text-tiny md:text-base"
+            >
+              آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن
+              بست شب بو
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column - Newsletter -->
+        <div
+          class="order-1 mb-10 w-full items-center justify-center sm:flex sm:flex-col md:order-2"
+        >
+          <div>
+            <h2 class="pb-3 text-sm font-bold md:text-base lg:text-base">
+              با ما در ارتباط باش
+            </h2>
+            <p class="pb-6 text-xs md:text-base lg:text-base">
+              اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر
+              بشی.
+            </p>
+          </div>
+
+          <div
+            class="relative flex w-full items-stretch justify-center rounded-xl border border-gray-300 p-1.5"
+          >
+            <input
+              type="email"
+              placeholder="ایمیل"
+              class="w-full py-2.5 pr-7 pl-1.5 text-[#bcbcbc]"
+            />
+            <button
+              type="submit"
+              class="rounded-lg bg-[#2C7EF8] px-5 py-3 text-sm font-medium text-white"
+            >
+              ارسال
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div
+        id="copy-right"
+        class="text-footer-copyright pt-10 text-center text-sm"
+      >
+        <p>تمامی حقوق مادی و معنوی این سایت متعلق به کوثرالیست می‌باشد.</p>
+      </div>
+    </footer>
   </body>
 </html>
