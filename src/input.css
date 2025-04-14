@@ -106,6 +106,7 @@
   --color-on-background: #191c1e;
   --color-surface: #ffffff;
   --color-default-text: #141414;
+  --color-aboutme-text: #6f7076;
   --color-icons-primary: #2c7ef8;
 
   /* cards */
@@ -137,6 +138,7 @@
     --color-surface: #e6e9ef;
     --color-default-text: #ffffff;
     --color-icons-primary: #ffffff;
+    --color-aboutme-text: #ffffff;
 
     /* cards */
     --color-card-bg: #0b192d;
