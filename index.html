@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="fa-IR" dir="rtl" class="dark" >
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
-
-  <link rel="stylesheet" href="./style.css" />
-  <title>QueraList</title>
-</head>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="./src/index.js" defer></script>
+    <title>QueraList</title>
+  </head>
 
   <body
     class="font-yekan text-default-text bg-background transition-all duration-500"
@@ -46,21 +46,21 @@
           </li>
           <li class="hidden md:block">
             <a
-              href="#"
+              href="."
               class="hover:text-primary-hover active:text-primary-hover hidden font-semibold md:block"
               >صفحه اصلی</a
             >
           </li>
           <li class="hidden md:block">
             <a
-              href="#"
+              href="./pages/AboutMe.html"
               class="hover:text-primary-hover active:text-primary-hover hidden font-semibold md:block"
               >درباره ما</a
             >
           </li>
           <li class="hidden md:block">
             <a
-              href="#"
+              href="./pages/ContactMe.html"
               class="hover:text-primary-hover active:text-primary-hover hidden font-semibold md:block"
               >ارتباط با ما</a
             >
@@ -140,7 +140,7 @@
       <!----------------------------------------->
       <!------------- HERO SECTION ------------->
       <!----------------------------------------->
-      <section class="mb-8 bg-linear-(--hero-gradient) pt-20 md:mb-16">
+      <section class="mb-8 bg-linear-(--hero-gradient) pt-20 md:mb-25">
         <!-- hero container -->
         <div
           class="mx-auto flex w-9/10 max-w-120 flex-col items-center justify-center text-center md:w-9/10 md:max-w-6xl"
@@ -219,7 +219,7 @@
           <picture class="w-full overflow-hidden md:rounded-xl">
             <img
               class="w-full object-fill dark:content-[url(../media/images/app-desktop-dark.png)]"
-              src="../media/images/app-desktop-light.png"
+              src="./media/images/app-desktop-light.png"
               alt="تصویر اپلکیشن کوئرا لیست"
             />
           </picture>
@@ -445,12 +445,12 @@
 
           <div class="mb-5 h-[202px] overflow-hidden lg:hidden">
             <img
-              src="../assets/images/Put screen in here (1).png"
+              src="./assets/images/Put screen in here (1).png"
               alt="mobile-screen"
               class="rounded-2xl bg-gradient-to-b from-[#E5E7E8] to-[#E9EBF1] p-[8px] lg:hidden dark:hidden"
             />
             <img
-              src="../assets/images/Statistics-Dark.png"
+              src="./assets/images/Statistics-Dark.png"
               alt="mobile-screen"
               class="hidden rounded-2xl bg-[#2f3132] p-[8px] dark:block"
             />
@@ -469,40 +469,50 @@
           </div>
           <div class="flex gap-1 text-[#2C7EF8] lg:pr-3">
             <a src="" class="text-lg font-bold">ورود به اپلیکیشن</a>
-            <img src="../assets/icons/vuesax/linear/arrow-right.svg" />
+            <img src="./assets/icons/vuesax/linear/arrow-right.svg" />
           </div>
         </div>
         <div class="">
           <img
-            src="../assets/images/image 39129.png"
+            src="./assets/images/image 39129.png"
             alt="app-screen"
             class="top-0 left-0 hidden rounded-3xl bg-gradient-to-b from-[#E5E7E8] to-[#E9EBF1] p-0 lg:absolute lg:block dark:hidden"
           />
           <img
-            src="../assets/images/Put screen in here (1).png"
+            src="./assets/images/Put screen in here (1).png"
             alt="mobile-screen"
             class="top-10 left-75 hidden rounded-2xl bg-gradient-to-b from-[#E5E7E8] to-[#E9EBF1] p-[8px] lg:absolute lg:block dark:hidden"
           />
 
-        <img src="../assets/images/image 39129-dark.png" alt="app-screen"
-          class='absolute top-0 left-0 bg-[#2f3132] rounded-3xl p-0 hidden lg:dark:block'>
-        <img src="../assets/images/Statistics-Dark.png" alt="mobile-screen"
-          class="absolute left-75 bottom-0 p-[8px]  bg-[#2f3132] hidden rounded-2xl lg:dark:block" />
-      </div>
-    </section>
-    <!----------------------------------------->
-    <!---------- QUERA User Opinion ---------->
-    <!----------------------------------------->
-    <section class="flex flex-col w-full overflow-hidden items-center justify-center">
-      <div class="flex flex-col gap-6 text-center max-w-xl lg:p-10">
-        <h2
-          class="text-xl font-semibold font-morraba text-card-heading lg:text-4xl lg:font-bold gap-16">
-          نظرات کاربران
-        </h2>
-        <p class="text-tiny lg:text-lg font-normal text-card-text">
-          بیش از یک دهه است که کوئرا لیست به مردم در سراسر جهان کمک می‌کند تا سازماندهی شوند و به اهداف خود برسند.
-        </p>
-      </div>
+          <img
+            src="./assets/images/image 39129-dark.png"
+            alt="app-screen"
+            class="absolute top-0 left-0 hidden rounded-3xl bg-[#2f3132] p-0 lg:dark:block"
+          />
+          <img
+            src="./assets/images/Statistics-Dark.png"
+            alt="mobile-screen"
+            class="absolute bottom-0 left-75 hidden rounded-2xl bg-[#2f3132] p-[8px] lg:dark:block"
+          />
+        </div>
+      </section>
+      <!----------------------------------------->
+      <!---------- QUERA User Opinion ---------->
+      <!----------------------------------------->
+      <section
+        class="flex w-full flex-col items-center justify-center overflow-hidden"
+      >
+        <div class="flex max-w-xl flex-col gap-6 text-center lg:p-10">
+          <h2
+            class="font-morraba text-card-heading gap-16 text-xl font-semibold lg:text-4xl lg:font-bold"
+          >
+            نظرات کاربران
+          </h2>
+          <p class="text-tiny text-card-text font-normal lg:text-lg">
+            بیش از یک دهه است که کوئرا لیست به مردم در سراسر جهان کمک می‌کند تا
+            سازماندهی شوند و به اهداف خود برسند.
+          </p>
+        </div>
 
         <!-- Opinion's Cards -->
 
@@ -512,27 +522,40 @@
         >
           <!-- figure 1 -->
 
-        <figure
-          class="hidden md:flex flex-col items-center bg-background dark:bg-[#0B192D] rounded-2xl px-8 py-6 gap-4 justify-center shadow-card flex-1">
-          <div class="flex gap-5 items-center">
-            <img src="../assets/images/profile-photo.png" alt="profile-photo"
-              class="w-[68px] h-[68px] object-cover rounded-full" />
-            <div>
-              <h2 class="text-card-heading font-morraba font-bold text-sm lg:text-base pb-1">رویا
-                ملکی</h2>
-              <p class="text-card-text-light dark:text-[#e6e6e6] font-normal text-xs lg:text-sm">مهندس نرم‌افزار دیجی
-                کالا</p>
+          <figure
+            class="bg-background shadow-card hidden flex-1 flex-col items-center justify-center gap-4 rounded-2xl px-8 py-6 md:flex dark:bg-[#0B192D]"
+          >
+            <div class="flex items-center gap-5">
+              <img
+                src="./assets/images/profile-photo.png"
+                alt="profile-photo"
+                class="h-[68px] w-[68px] rounded-full object-cover"
+              />
+              <div>
+                <h2
+                  class="text-card-heading font-morraba pb-1 text-sm font-bold lg:text-base"
+                >
+                  رویا ملکی
+                </h2>
+                <p
+                  class="text-card-text-light text-xs font-normal lg:text-sm dark:text-[#e6e6e6]"
+                >
+                  مهندس نرم‌افزار دیجی کالا
+                </p>
+              </div>
             </div>
-          </div>
-          <div>
-            <p class="text-card-text text-xs lg:text-base font-light leading-relaxed">
-              تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده
-              از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین
-              همه
-              چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.ّ
-            </p>
-          </div>
-        </figure>
+            <div>
+              <p
+                class="text-card-text text-xs leading-relaxed font-light lg:text-base"
+              >
+                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی
+                اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این
+                امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی
+                کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از
+                یکپارچگی اطلاعات و دیتاها لذت ببریم.ّ
+              </p>
+            </div>
+          </figure>
 
           <!-- figure 2 -->
 
@@ -541,7 +564,7 @@
           >
             <div class="flex items-center gap-5">
               <img
-                src="../assets/images/profile-photo2.png"
+                src="./assets/images/profile-photo2.png"
                 alt="profile-photo"
                 class="h-[68px] w-[68px] rounded-full object-cover"
               />
@@ -576,7 +599,7 @@
           >
             <div class="flex items-center gap-5">
               <img
-                src="../assets/images/profile-photo4.png"
+                src="./assets/images/profile-photo4.png"
                 alt="profile-photo"
                 class="h-[68px] w-[68px] rounded-full object-cover"
               />
@@ -613,7 +636,7 @@
           >
             <div class="flex items-center gap-5">
               <img
-                src="../assets/images/profile-photo3.png"
+                src="./assets/images/profile-photo3.png"
                 alt="profile-photo"
                 class="h-[68px] w-[68px] rounded-full object-cover"
               />
@@ -648,7 +671,7 @@
           >
             <div class="flex items-center gap-5">
               <img
-                src="../assets/images/77dd64be56b77b645113191065f1ff7b.png"
+                src="./assets/images/77dd64be56b77b645113191065f1ff7b.png"
                 alt="profile-photo"
                 class="h-[68px] w-[68px] rounded-full object-cover"
               />
@@ -685,7 +708,7 @@
           >
             <div class="flex items-center gap-5">
               <img
-                src="../assets/images/profile-photo6.png"
+                src="./assets/images/profile-photo6.png"
                 alt="profile-photo"
                 class="h-[68px] w-[68px] rounded-full object-cover"
               />
@@ -713,7 +736,7 @@
             </div>
           </figure>
         </div>
-        <div class="flex justify-between gap-10 p-10 lg:pb-40">
+        <div class="flex justify-between gap-10 p-10">
           <button
             class="flex items-center rounded-md border border-[#E3E6E8] p-2.5 hover:cursor-pointer dark:border-[#293242]"
           >
@@ -754,79 +777,137 @@
     <!---------- Footer ---------->
     <!----------------------------------------->
 
-  <footer
-  class="relative text-footer-text mx-auto w-9/10 max-w-100 flex flex-col items-center justify-center md:w-2/3 lg:w-2/3 md:max-w-300 md:gap-12 py-10">
-  <!-- Top Section with Logo -->
-  <div id="top-footer" class='flex w-full overflow-hidden justify-center items-center gap-5 text-center pb-10'>
-    <img src="../assets/images/Vector 24.png" alt="side-line" class="h-0.5">
-    <h2 class="text-lg md:text-xl font-semibold font-morraba">کوثرالیست</h2>
-    <img src="../assets/images/Vector 24.png" alt="side-line" class="h-0.5">
-  </div>
-
-  <!-- Main Footer Content -->
-  <div id="main-footer" class="grid grid-cols-1 lg:grid-cols-2 lg:gap-120 text-right">
-    <!-- Left Column - Contact Info -->
-    <div class="w-full order-2 grid grid-cols-2 gap-4 md:gap-6 md:flex md:flex-col">
-      <!-- <div class="md:space-y-6 order-1 space-y-4"> -->
-      <!-- Fax -->
+    <footer
+      class="text-footer-text relative mx-auto flex w-9/10 max-w-100 flex-col items-center justify-center py-10 md:w-2/3 md:max-w-300 md:gap-12 lg:w-2/3"
+    >
+      <!-- Top Section with Logo -->
       <div
-        class="flex items-center bg-card-bg gap-3 shadow-card border-2 py-7 px-4 md:p-0 md:border-0 md:shadow-none rounded-xl border-card-border md:bg-transparent">
-        <div class="bg-card-icons-bg md:bg-transparent p-2 rounded-full  shrink-0">
-          <img src="../assets/icons/vuesax/bold/Vector (1).png" alt="fax"
-            class="w-4 h-4 lg:brightness-0 dark:brightness-1000 md:w-6 md:h-6">
-        </div>
-        <a href="tel:+982144445566" class="text-tiny md:text-base"><span>فکس: </span>
-          <span>44445566-021</span></a>
+        id="top-footer"
+        class="flex w-full items-center justify-center gap-5 overflow-hidden pb-10 text-center"
+      >
+        <img
+          src="./assets/images/Vector 24.png"
+          alt="side-line"
+          class="h-0.5"
+        />
+        <h2 class="font-morraba text-lg font-semibold md:text-xl">کوثرالیست</h2>
+        <img
+          src="./assets/images/Vector 24.png"
+          alt="side-line"
+          class="h-0.5"
+        />
       </div>
 
-      <!-- Phone -->
+      <!-- Main Footer Content -->
       <div
-        class="flex items-center bg-card-bg gap-3 md:bg-transparent shadow-card border-2 py-7 px-4 md:p-0 md:border-0 md:shadow-none rounded-xl border-card-border">
-        <div class="bg-card-icons-bg md:bg-transparent p-2 rounded-full  shrink-0">
-          <img src="../assets/icons/vuesax/bold/call.svg" alt="phone"
-            class="w-4 h-4 lg:brightness-0 dark:brightness-1000 md:w-6 md:h-6">
-        </div>
-        <a href="tel:+982144445566" class="text-tiny md:text-base"><span>تلفن پشتیبانی: </span>
-          <span>44445566-021</span></a>
-      </div>
-      <!-- </div> -->
+        id="main-footer"
+        class="grid grid-cols-1 text-right lg:grid-cols-2 lg:gap-120"
+      >
+        <!-- Left Column - Contact Info -->
+        <div
+          class="order-2 grid w-full grid-cols-2 gap-4 md:flex md:flex-col md:gap-6"
+        >
+          <!-- <div class="md:space-y-6 order-1 space-y-4"> -->
+          <!-- Fax -->
+          <div
+            class="bg-card-bg shadow-card border-card-border flex items-center gap-3 rounded-xl border-2 px-4 py-7 md:border-0 md:bg-transparent md:p-0 md:shadow-none"
+          >
+            <div
+              class="bg-card-icons-bg shrink-0 rounded-full p-2 md:bg-transparent"
+            >
+              <img
+                src="./assets/icons/vuesax/bold/Vector (1).png"
+                alt="fax"
+                class="h-4 w-4 md:h-6 md:w-6 lg:brightness-0 dark:brightness-1000"
+              />
+            </div>
+            <a href="tel:+982144445566" class="text-tiny md:text-base"
+              ><span>فکس: </span> <span>44445566-021</span></a
+            >
+          </div>
 
-      <!-- Address -->
+          <!-- Phone -->
+          <div
+            class="bg-card-bg shadow-card border-card-border flex items-center gap-3 rounded-xl border-2 px-4 py-7 md:border-0 md:bg-transparent md:p-0 md:shadow-none"
+          >
+            <div
+              class="bg-card-icons-bg shrink-0 rounded-full p-2 md:bg-transparent"
+            >
+              <img
+                src="./assets/icons/vuesax/bold/call.svg"
+                alt="phone"
+                class="h-4 w-4 md:h-6 md:w-6 lg:brightness-0 dark:brightness-1000"
+              />
+            </div>
+            <a href="tel:+982144445566" class="text-tiny md:text-base"
+              ><span>تلفن پشتیبانی: </span> <span>44445566-021</span></a
+            >
+          </div>
+          <!-- </div> -->
+
+          <!-- Address -->
+          <div
+            class="bg-card-bg shadow-card border-card-border row-start-1 row-end-3 flex flex-col items-center justify-center gap-3 rounded-xl border-2 p-4 text-center md:flex-row md:items-start md:border-0 md:bg-transparent md:p-0 md:text-right md:shadow-none"
+          >
+            <div
+              class="bg-card-icons-bg mt-1 shrink-0 rounded-full p-2 md:bg-transparent"
+            >
+              <img
+                src="./assets/icons/vuesax/bold/location.svg"
+                alt="location"
+                class="h-4 w-4 md:h-6 md:w-6 lg:brightness-0 dark:brightness-1000"
+              />
+            </div>
+            <a
+              href="https://maps.app.goo.gl/iL6TKCJqPA7va1Nx7"
+              target="_blank"
+              class="text-tiny md:text-base"
+            >
+              آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن
+              بست شب بو
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column - Newsletter -->
+        <div
+          class="order-1 mb-10 w-full items-center justify-center sm:flex sm:flex-col md:order-2"
+        >
+          <div>
+            <h2 class="pb-3 text-sm font-bold md:text-base lg:text-base">
+              با ما در ارتباط باش
+            </h2>
+            <p class="pb-6 text-xs md:text-base lg:text-base">
+              اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر
+              بشی.
+            </p>
+          </div>
+
+          <div
+            class="relative flex w-full items-stretch justify-center rounded-xl border border-gray-300 p-1.5"
+          >
+            <input
+              type="email"
+              placeholder="ایمیل"
+              class="w-full py-2.5 pr-7 pl-1.5 text-[#bcbcbc]"
+            />
+            <button
+              type="submit"
+              class="rounded-lg bg-[#2C7EF8] px-5 py-3 text-sm font-medium text-white"
+            >
+              ارسال
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
       <div
-        class="flex flex-col md:flex-row bg-card-bg rounded-xl justify-center row-start-1 row-end-3 p-4 md:p-0 items-center md:items-start text-center md:text-right gap-3 md:bg-transparent shadow-card border-2 border-card-border md:shadow-none md:border-0">
-        <div class="bg-card-icons-bg md:bg-transparent p-2 rounded-full mt-1 shrink-0">
-          <img src="../assets/icons/vuesax/bold/location.svg" alt="location"
-            class="w-4 h-4 lg:brightness-0 dark:brightness-1000 md:w-6 md:h-6">
-        </div>
-        <a href="https://maps.app.goo.gl/iL6TKCJqPA7va1Nx7" target="_blank" class="text-tiny md:text-base">
-          آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن بست شب بو
-        </a>
+        id="copy-right"
+        class="text-footer-copyright pt-10 text-center text-sm"
+      >
+        <p>تمامی حقوق مادی و معنوی این سایت متعلق به کوثرالیست می‌باشد.</p>
       </div>
-    </div>
-
-    <!-- Right Column - Newsletter -->
-    <div class="sm:flex sm:flex-col w-full justify-center items-center order-1 md:order-2 mb-10">
-      <div>
-        <h2 class="font-bold text-sm md:text-base lg:text-base pb-3">با ما در ارتباط باش</h2>
-        <p class="text-xs md:text-base lg:text-base pb-6">
-          اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر بشی.
-        </p>
-      </div>
-
-      <div class="relative w-full p-1.5 flex border justify-center items-stretch border-gray-300 rounded-xl">
-        <input type="email" placeholder="ایمیل" class="w-full  py-2.5 pr-7 pl-1.5 text-[#bcbcbc]">
-        <button type="submit" class="bg-[#2C7EF8] py-3 px-5 rounded-lg text-white text-sm font-medium">
-          ارسال
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Copyright -->
-  <div id="copy-right" class="text-center text-footer-copyright text-sm pt-10">
-    <p>تمامی حقوق مادی و معنوی این سایت متعلق به کوثرالیست می‌باشد.</p>
-  </div>
-</footer>
-</body>
-
+    </footer>
+  </body>
 </html>
