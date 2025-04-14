@@ -1,200 +1,127 @@
 <!doctype html>
-<html lang="fa-IR" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+<html lang="fa-IR" dir="rtl" class="dark">
 
-    <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 
-  <body class="font-yekan text-default-text bg-background">
-    <header>
-      <!----------------------------------------->
-      <!------------ NAVIGATION BAR ------------>
-      <!----------------------------------------->
-      <nav
-        class="mx-auto flex w-full justify-between px-3 py-4 md:w-full md:max-w-7xl"
-      >
-        <!-- mobile nav button -->
-        <svg
-          class="srtoke-[1.5] hover:stroke-primary-hover active:stroke-primary-hover stroke-gray-800 md:hidden"
-          width="24"
-          height="25"
-          viewBox="0 0 24 25"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M3 7.5H21" stroke-linecap="round" />
-          <path d="M3 12.5H21" stroke-linecap="round" />
-          <path d="M3 17.5H21" stroke-linecap="round" />
-        </svg>
+  <link rel="stylesheet" href="./style.css" />
+  <title>Document</title>
+</head>
 
-        <ul
-          class="flex items-center gap-18 text-gray-500 md:text-base dark:text-gray-300"
-        >
-          <li>
-            <h1
-              class="text-base font-semibold text-gray-900 md:text-xl dark:text-white"
-            >
-              کوئرا لیست
-            </h1>
-          </li>
-          <li class="hidden md:block">
-            <a
-              href="#"
-              class="hover:text-primary-hover active:text-primary-hover hidden font-semibold md:block"
-              >صفحه اصلی</a
-            >
-          </li>
-          <li class="hidden md:block">
-            <a
-              href="#"
-              class="hover:text-primary-hover active:text-primary-hover hidden font-semibold md:block"
-              >درباره ما</a
-            >
-          </li>
-          <li class="hidden md:block">
-            <a
-              href="#"
-              class="hover:text-primary-hover active:text-primary-hover hidden font-semibold md:block"
-              >ارتباط با ما</a
-            >
-          </li>
-        </ul>
-        <ul class="flex items-center gap-4">
-          <li class="hidden md:block">
-            <a
-              href="#"
-              class="bg-primary hover:bg-primary-hover active:bg-primary-hover rounded-md px-6 py-3 text-white transition-all duration-300 hover:cursor-pointer"
-              >ورود به اپلیکیشن</a
-            >
-          </li>
-          <li class="hidden md:block">
-            <figure
-              class="group flex h-10 w-10 items-center justify-center rounded-md border border-gray-200 hover:cursor-pointer dark:border-gray-800"
-            >
-              <svg
-                class="group-hover:fill-primary-hover group-active:fill-primary-hover fill-gray-500 dark:hidden"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12.5856 17.1379V6.93105C12.5856 6.79312 12.5166 6.72415 12.3787 6.72415C9.41319 6.72415 7.06836 9.06898 7.06836 12.0345C7.06836 15 9.41319 17.3448 12.3787 17.3448C12.4477 17.4138 12.5856 17.2759 12.5856 17.1379Z"
-                />
-                <path
-                  d="M17.9653 11.8965C17.8274 9.34482 16.0343 7.27585 13.5515 6.86206C13.4136 6.86206 13.3446 6.93103 13.2756 7.06896C13.2756 7.13792 13.2756 7.20689 13.3446 7.27585C14.7929 8.3793 15.6894 10.1034 15.6894 11.9655C15.8963 13.9655 14.9998 15.8965 13.3446 17.069C13.2756 17.1379 13.2067 17.2759 13.2756 17.3448C13.3446 17.4138 13.4136 17.4138 13.4825 17.4138C13.4825 17.4138 13.4825 17.4138 13.5515 17.4138C16.1722 16.931 18.0343 14.5862 17.9653 11.8965Z"
-                />
-                <path
-                  d="M12.3105 5.55172C12.6553 5.55172 12.8622 5.27586 12.8622 5V1.55172C12.8622 1.2069 12.5864 1 12.3105 1C11.9657 1 11.7588 1.27586 11.7588 1.55172V4.93103C11.7588 5.27586 12.0347 5.55172 12.3105 5.55172Z"
-                />
-                <path
-                  d="M6.93066 7.4138C7.13756 7.62069 7.48239 7.62069 7.75825 7.4138C7.96515 7.2069 7.96515 6.86207 7.75825 6.58621L5.41342 4.24138C5.20653 4.03449 4.8617 4.03449 4.58584 4.24138C4.37894 4.44828 4.37894 4.79311 4.58584 5.06897L6.93066 7.4138Z"
-                />
-                <path
-                  d="M12.3105 18.5172C11.9657 18.5172 11.7588 18.7931 11.7588 19.069V22.4483C11.7588 22.7931 12.0347 23 12.3105 23C12.5864 23 12.8622 22.7241 12.8622 22.4483V19.069C12.9312 18.7931 12.6553 18.5172 12.3105 18.5172Z"
-                />
-                <path
-                  d="M7.34446 16.4483C7.20653 16.4483 7.06859 16.5172 6.93066 16.5862L4.58584 18.931C4.37894 19.1379 4.37894 19.4828 4.58584 19.7586C4.79273 19.9655 5.13756 19.9655 5.41342 19.7586L7.75825 17.4138C7.96515 17.2069 7.96515 16.8621 7.75825 16.5862C7.62032 16.5172 7.48239 16.4483 7.34446 16.4483Z"
-                />
-                <path
-                  d="M5.82759 12.0345C5.82759 11.6897 5.55172 11.4828 5.27586 11.4828H1.55172C1.2069 11.4828 1 11.7586 1 12.1034C1 12.3793 1.27586 12.6552 1.55172 12.6552H5.2069C5.55172 12.5862 5.82759 12.3793 5.82759 12.0345Z"
-                />
-                <path
-                  d="M19.2755 5.55173C18.5858 5.34484 18.4479 5.20691 18.31 4.31036C18.31 4.24139 18.241 4.17242 18.172 4.17242C18.1031 4.17242 18.0341 4.24139 18.0341 4.31036C17.8962 5.20691 17.7582 5.34484 17.0686 5.55173C16.9996 5.55173 16.9307 5.68967 16.9307 5.75863C16.9307 5.8276 16.9996 5.8276 17.0686 5.89656C17.7582 6.10346 17.8962 6.24139 18.0341 7.13794C18.0341 7.20691 18.1031 7.27587 18.172 7.27587C18.241 7.27587 18.31 7.20691 18.31 7.13794C18.4479 6.24139 18.5858 6.10346 19.2755 5.89656C19.3445 5.89656 19.4134 5.75863 19.4134 5.68967C19.3445 5.55173 19.3445 5.55173 19.2755 5.55173Z"
-                />
-                <path
-                  d="M19.2755 18.5172C18.5858 18.3104 18.4479 18.1724 18.31 17.2759C18.31 17.2069 18.241 17.1379 18.172 17.1379C18.1031 17.1379 18.0341 17.2069 18.0341 17.2759C17.8962 18.1724 17.7582 18.3104 17.0686 18.5172C16.9996 18.5172 16.9307 18.6552 16.9307 18.7241C16.9307 18.7931 16.9996 18.7931 17.0686 18.8621C17.7582 19.069 17.8962 19.2069 18.0341 20.1035C18.0341 20.1724 18.1031 20.2414 18.172 20.2414C18.241 20.2414 18.31 20.1724 18.31 20.1035C18.4479 19.2069 18.5858 19.069 19.2755 18.8621C19.3445 18.8621 19.4134 18.7931 19.4134 18.7241C19.4134 18.5862 19.3445 18.5172 19.2755 18.5172Z"
-                />
-                <path
-                  d="M22.5175 11.8276C21.552 11.5517 21.4141 11.2759 21.2072 10.1034C21.2072 10.0345 21.1382 9.96552 21.0692 9.96552C21.0003 9.96552 20.9313 10.0345 20.9313 10.1034C20.7244 11.2759 20.5175 11.4828 19.552 11.7586C19.483 11.7586 19.4141 11.8276 19.4141 11.9655C19.4141 12.0345 19.483 12.0345 19.483 12.1034C20.4485 12.3793 20.5865 12.6552 20.7934 13.8276C20.7934 13.8965 20.8623 13.9655 20.9313 13.9655C21.0003 13.9655 21.0692 13.8965 21.0692 13.8276C21.2761 12.6552 21.483 12.4483 22.4485 12.1724C22.5175 12.1724 22.5865 12.1034 22.5865 11.9655C22.5865 11.8965 22.5865 11.8276 22.5175 11.8276Z"
-                />
-              </svg>
+<body class="font-yekan text-default-text bg-background">
+  <header>
+    <!----------------------------------------->
+    <!------------ NAVIGATION BAR ------------>
+    <!----------------------------------------->
+    <nav class="mx-auto flex w-full justify-between px-3 py-4 md:w-full md:max-w-7xl">
+      <!-- mobile nav button -->
+      <svg class="srtoke-[1.5] hover:stroke-primary-hover active:stroke-primary-hover stroke-gray-800 md:hidden"
+        width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 7.5H21" stroke-linecap="round" />
+        <path d="M3 12.5H21" stroke-linecap="round" />
+        <path d="M3 17.5H21" stroke-linecap="round" />
+      </svg>
 
-              <svg
-                class="group-hover:fill-icons-primary-hover mb-0.25 hidden fill-gray-300 dark:block"
-                width="20"
-                height="21"
-                viewBox="0 0 20 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8.45276 1.35651C9.05636 1.92408 8.91085 2.78313 8.63471 3.41723L8.6342 3.4184C8.2218 4.36102 7.9951 5.39431 8.0035 6.48732L8.00352 6.48998C8.02032 10.5459 11.3928 14.0084 15.5236 14.1774L15.5242 14.1774C16.1343 14.2028 16.7172 14.1605 17.2833 14.0592C17.6624 13.9902 18.0349 13.9778 18.3709 14.0562C18.7138 14.1361 19.059 14.3233 19.2736 14.6744C19.4872 15.0239 19.4971 15.4148 19.4166 15.7535C19.3374 16.087 19.1632 16.4135 18.9364 16.7209C16.9612 19.4231 13.6734 21.1339 10.0045 20.9748L10.004 20.9748C4.79694 20.7458 0.43907 16.5811 0.078457 11.4289C-0.250945 6.86208 2.4596 2.88545 6.398 1.22456C7.03081 0.956541 7.87253 0.810927 8.45276 1.35651ZM7.36482 2.49126C7.27737 2.50302 7.15039 2.5348 6.9822 2.60611L6.98087 2.60668C3.59555 4.03433 1.29409 7.43675 1.57462 11.3217L1.57475 11.3234C1.88037 15.6955 5.6043 19.2796 10.0695 19.4762C13.2245 19.613 16.0394 18.1433 17.7264 15.8344L17.7287 15.8312C17.8304 15.6936 17.8903 15.5838 17.9243 15.5035C17.8389 15.4992 17.7164 15.5049 17.5511 15.5351L17.5487 15.5355C16.876 15.656 16.1834 15.7061 15.4623 15.6761C10.5496 15.4752 6.52446 11.374 6.50354 6.49753C6.49365 5.1869 6.7662 3.94596 7.25974 2.81768C7.32174 2.67519 7.35163 2.56714 7.36482 2.49126ZM7.4874 2.48881C7.48739 2.48883 7.48691 2.48872 7.48602 2.48846L7.4874 2.48881Z"
-                />
-              </svg>
-            </figure>
-          </li>
-        </ul>
-      </nav>
+      <ul class="flex items-center gap-18 text-gray-500 md:text-base dark:text-gray-300">
+        <li>
+          <h1 class="text-base font-semibold text-gray-900 md:text-xl dark:text-white">
+            کوئرا لیست
+          </h1>
+        </li>
+        <li class="hidden md:block">
+          <a href="#" class="hover:text-primary-hover active:text-primary-hover hidden font-semibold md:block">صفحه
+            اصلی</a>
+        </li>
+        <li class="hidden md:block">
+          <a href="#" class="hover:text-primary-hover active:text-primary-hover hidden font-semibold md:block">درباره
+            ما</a>
+        </li>
+        <li class="hidden md:block">
+          <a href="#" class="hover:text-primary-hover active:text-primary-hover hidden font-semibold md:block">ارتباط با
+            ما</a>
+        </li>
+      </ul>
+      <ul class="flex items-center gap-4">
+        <li class="hidden md:block">
+          <a href="#"
+            class="bg-primary hover:bg-primary-hover active:bg-primary-hover rounded-md px-6 py-3 text-white transition-all duration-300 hover:cursor-pointer">ورود
+            به اپلیکیشن</a>
+        </li>
+        <li class="hidden md:block">
+          <figure
+            class="group flex h-10 w-10 items-center justify-center rounded-md border border-gray-200 hover:cursor-pointer dark:border-gray-800">
+            <svg class="group-hover:fill-primary-hover group-active:fill-primary-hover fill-gray-500 dark:hidden"
+              width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.5856 17.1379V6.93105C12.5856 6.79312 12.5166 6.72415 12.3787 6.72415C9.41319 6.72415 7.06836 9.06898 7.06836 12.0345C7.06836 15 9.41319 17.3448 12.3787 17.3448C12.4477 17.4138 12.5856 17.2759 12.5856 17.1379Z" />
+              <path
+                d="M17.9653 11.8965C17.8274 9.34482 16.0343 7.27585 13.5515 6.86206C13.4136 6.86206 13.3446 6.93103 13.2756 7.06896C13.2756 7.13792 13.2756 7.20689 13.3446 7.27585C14.7929 8.3793 15.6894 10.1034 15.6894 11.9655C15.8963 13.9655 14.9998 15.8965 13.3446 17.069C13.2756 17.1379 13.2067 17.2759 13.2756 17.3448C13.3446 17.4138 13.4136 17.4138 13.4825 17.4138C13.4825 17.4138 13.4825 17.4138 13.5515 17.4138C16.1722 16.931 18.0343 14.5862 17.9653 11.8965Z" />
+              <path
+                d="M12.3105 5.55172C12.6553 5.55172 12.8622 5.27586 12.8622 5V1.55172C12.8622 1.2069 12.5864 1 12.3105 1C11.9657 1 11.7588 1.27586 11.7588 1.55172V4.93103C11.7588 5.27586 12.0347 5.55172 12.3105 5.55172Z" />
+              <path
+                d="M6.93066 7.4138C7.13756 7.62069 7.48239 7.62069 7.75825 7.4138C7.96515 7.2069 7.96515 6.86207 7.75825 6.58621L5.41342 4.24138C5.20653 4.03449 4.8617 4.03449 4.58584 4.24138C4.37894 4.44828 4.37894 4.79311 4.58584 5.06897L6.93066 7.4138Z" />
+              <path
+                d="M12.3105 18.5172C11.9657 18.5172 11.7588 18.7931 11.7588 19.069V22.4483C11.7588 22.7931 12.0347 23 12.3105 23C12.5864 23 12.8622 22.7241 12.8622 22.4483V19.069C12.9312 18.7931 12.6553 18.5172 12.3105 18.5172Z" />
+              <path
+                d="M7.34446 16.4483C7.20653 16.4483 7.06859 16.5172 6.93066 16.5862L4.58584 18.931C4.37894 19.1379 4.37894 19.4828 4.58584 19.7586C4.79273 19.9655 5.13756 19.9655 5.41342 19.7586L7.75825 17.4138C7.96515 17.2069 7.96515 16.8621 7.75825 16.5862C7.62032 16.5172 7.48239 16.4483 7.34446 16.4483Z" />
+              <path
+                d="M5.82759 12.0345C5.82759 11.6897 5.55172 11.4828 5.27586 11.4828H1.55172C1.2069 11.4828 1 11.7586 1 12.1034C1 12.3793 1.27586 12.6552 1.55172 12.6552H5.2069C5.55172 12.5862 5.82759 12.3793 5.82759 12.0345Z" />
+              <path
+                d="M19.2755 5.55173C18.5858 5.34484 18.4479 5.20691 18.31 4.31036C18.31 4.24139 18.241 4.17242 18.172 4.17242C18.1031 4.17242 18.0341 4.24139 18.0341 4.31036C17.8962 5.20691 17.7582 5.34484 17.0686 5.55173C16.9996 5.55173 16.9307 5.68967 16.9307 5.75863C16.9307 5.8276 16.9996 5.8276 17.0686 5.89656C17.7582 6.10346 17.8962 6.24139 18.0341 7.13794C18.0341 7.20691 18.1031 7.27587 18.172 7.27587C18.241 7.27587 18.31 7.20691 18.31 7.13794C18.4479 6.24139 18.5858 6.10346 19.2755 5.89656C19.3445 5.89656 19.4134 5.75863 19.4134 5.68967C19.3445 5.55173 19.3445 5.55173 19.2755 5.55173Z" />
+              <path
+                d="M19.2755 18.5172C18.5858 18.3104 18.4479 18.1724 18.31 17.2759C18.31 17.2069 18.241 17.1379 18.172 17.1379C18.1031 17.1379 18.0341 17.2069 18.0341 17.2759C17.8962 18.1724 17.7582 18.3104 17.0686 18.5172C16.9996 18.5172 16.9307 18.6552 16.9307 18.7241C16.9307 18.7931 16.9996 18.7931 17.0686 18.8621C17.7582 19.069 17.8962 19.2069 18.0341 20.1035C18.0341 20.1724 18.1031 20.2414 18.172 20.2414C18.241 20.2414 18.31 20.1724 18.31 20.1035C18.4479 19.2069 18.5858 19.069 19.2755 18.8621C19.3445 18.8621 19.4134 18.7931 19.4134 18.7241C19.4134 18.5862 19.3445 18.5172 19.2755 18.5172Z" />
+              <path
+                d="M22.5175 11.8276C21.552 11.5517 21.4141 11.2759 21.2072 10.1034C21.2072 10.0345 21.1382 9.96552 21.0692 9.96552C21.0003 9.96552 20.9313 10.0345 20.9313 10.1034C20.7244 11.2759 20.5175 11.4828 19.552 11.7586C19.483 11.7586 19.4141 11.8276 19.4141 11.9655C19.4141 12.0345 19.483 12.0345 19.483 12.1034C20.4485 12.3793 20.5865 12.6552 20.7934 13.8276C20.7934 13.8965 20.8623 13.9655 20.9313 13.9655C21.0003 13.9655 21.0692 13.8965 21.0692 13.8276C21.2761 12.6552 21.483 12.4483 22.4485 12.1724C22.5175 12.1724 22.5865 12.1034 22.5865 11.9655C22.5865 11.8965 22.5865 11.8276 22.5175 11.8276Z" />
+            </svg>
 
-      <!----------------------------------------->
-      <!------------- HERO SECTION ------------->
-      <!----------------------------------------->
-      <section class="mb-8 bg-linear-(--hero-gradient) pt-20 md:mb-16">
-        <!-- hero container -->
-        <div
-          class="mx-auto flex w-9/10 max-w-120 flex-col items-center justify-center text-center md:w-9/10 md:max-w-6xl"
-        >
-          <div
-            class="relative mb-16 flex flex-col items-center justify-end gap-1 md:mb-24"
-          >
-            <h3 class="font-morabba text-2xl md:text-5xl">
-              تمرکز رو وارد زندگیت کن
-            </h3>
-            <h2 class="font-morabba text-[1.75rem] font-black md:text-[4rem]">
-              به سمت اهدافت اوج بگیر
-            </h2>
+            <svg class="group-hover:fill-icons-primary-hover mb-0.25 hidden fill-gray-300 dark:block" width="20"
+              height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.45276 1.35651C9.05636 1.92408 8.91085 2.78313 8.63471 3.41723L8.6342 3.4184C8.2218 4.36102 7.9951 5.39431 8.0035 6.48732L8.00352 6.48998C8.02032 10.5459 11.3928 14.0084 15.5236 14.1774L15.5242 14.1774C16.1343 14.2028 16.7172 14.1605 17.2833 14.0592C17.6624 13.9902 18.0349 13.9778 18.3709 14.0562C18.7138 14.1361 19.059 14.3233 19.2736 14.6744C19.4872 15.0239 19.4971 15.4148 19.4166 15.7535C19.3374 16.087 19.1632 16.4135 18.9364 16.7209C16.9612 19.4231 13.6734 21.1339 10.0045 20.9748L10.004 20.9748C4.79694 20.7458 0.43907 16.5811 0.078457 11.4289C-0.250945 6.86208 2.4596 2.88545 6.398 1.22456C7.03081 0.956541 7.87253 0.810927 8.45276 1.35651ZM7.36482 2.49126C7.27737 2.50302 7.15039 2.5348 6.9822 2.60611L6.98087 2.60668C3.59555 4.03433 1.29409 7.43675 1.57462 11.3217L1.57475 11.3234C1.88037 15.6955 5.6043 19.2796 10.0695 19.4762C13.2245 19.613 16.0394 18.1433 17.7264 15.8344L17.7287 15.8312C17.8304 15.6936 17.8903 15.5838 17.9243 15.5035C17.8389 15.4992 17.7164 15.5049 17.5511 15.5351L17.5487 15.5355C16.876 15.656 16.1834 15.7061 15.4623 15.6761C10.5496 15.4752 6.52446 11.374 6.50354 6.49753C6.49365 5.1869 6.7662 3.94596 7.25974 2.81768C7.32174 2.67519 7.35163 2.56714 7.36482 2.49126ZM7.4874 2.48881C7.48739 2.48883 7.48691 2.48872 7.48602 2.48846L7.4874 2.48881Z" />
+            </svg>
+          </figure>
+        </li>
+      </ul>
+    </nav>
 
-            <!-- stars and line iccons box -->
-            <div>
-              <svg
-                class="fill-icons-primary absolute -top-7 right-0 md:-right-10"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M10.6178 0.9886C11.0679 -0.329535 12.9321 -0.329531 13.3822 0.9886L15.8334 8.16657L23.0114 10.6178C24.3295 11.0679 24.3295 12.9321 23.0114 13.3822L15.8334 15.8334L13.3822 23.0114C12.9321 24.3295 11.0679 24.3295 10.6178 23.0114L8.16657 15.8334L0.9886 13.3822C-0.329535 12.9321 -0.329532 11.0679 0.9886 10.6178L8.16657 8.16657L10.6178 0.9886Z"
-                />
-              </svg>
-              <svg
-                class="fill-icons-primary absolute -bottom-9 left-2.5 lg:-left-52"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M10.6178 0.9886C11.0679 -0.329535 12.9321 -0.329531 13.3822 0.9886L15.8334 8.16657L23.0114 10.6178C24.3295 11.0679 24.3295 12.9321 23.0114 13.3822L15.8334 15.8334L13.3822 23.0114C12.9321 24.3295 11.0679 24.3295 10.6178 23.0114L8.16657 15.8334L0.9886 13.3822C-0.329535 12.9321 -0.329532 11.0679 0.9886 10.6178L8.16657 8.16657L10.6178 0.9886Z"
-                />
-              </svg>
-              <svg
-                class="stroke-icons-primary absolute -bottom-2 left-[85px] h-[11] w-[108] stroke-[4] md:-bottom-14 md:left-40 md:h-[63px] md:w-[302px] md:rotate-[-2.56deg]"
-                viewBox="0 0 108 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.99931 8.78032C1.99931 8.78032 21.2148 3.73979 52.1342 2.87587C83.0537 2.01195 105.585 7.09068 105.585 7.09068"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </div>
+    <!----------------------------------------->
+    <!------------- HERO SECTION ------------->
+    <!----------------------------------------->
+    <section class="mb-8 bg-linear-(--hero-gradient) pt-20 md:mb-16">
+      <!-- hero container -->
+      <div
+        class="mx-auto flex w-9/10 max-w-120 flex-col items-center justify-center text-center md:w-9/10 md:max-w-6xl">
+        <div class="relative mb-16 flex flex-col items-center justify-end gap-1 md:mb-24">
+          <h3 class="font-morabba text-2xl md:text-5xl">
+            تمرکز رو وارد زندگیت کن
+          </h3>
+          <h2 class="font-morabba text-[1.75rem] font-black md:text-[4rem]">
+            به سمت اهدافت اوج بگیر
+          </h2>
+
+          <!-- stars and line iccons box -->
+          <div>
+            <svg class="fill-icons-primary absolute -top-7 right-0 md:-right-10" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10.6178 0.9886C11.0679 -0.329535 12.9321 -0.329531 13.3822 0.9886L15.8334 8.16657L23.0114 10.6178C24.3295 11.0679 24.3295 12.9321 23.0114 13.3822L15.8334 15.8334L13.3822 23.0114C12.9321 24.3295 11.0679 24.3295 10.6178 23.0114L8.16657 15.8334L0.9886 13.3822C-0.329535 12.9321 -0.329532 11.0679 0.9886 10.6178L8.16657 8.16657L10.6178 0.9886Z" />
+            </svg>
+            <svg class="fill-icons-primary absolute -bottom-9 left-2.5 lg:-left-52" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10.6178 0.9886C11.0679 -0.329535 12.9321 -0.329531 13.3822 0.9886L15.8334 8.16657L23.0114 10.6178C24.3295 11.0679 24.3295 12.9321 23.0114 13.3822L15.8334 15.8334L13.3822 23.0114C12.9321 24.3295 11.0679 24.3295 10.6178 23.0114L8.16657 15.8334L0.9886 13.3822C-0.329535 12.9321 -0.329532 11.0679 0.9886 10.6178L8.16657 8.16657L10.6178 0.9886Z" />
+            </svg>
+            <svg
+              class="stroke-icons-primary absolute -bottom-2 left-[85px] h-[11] w-[108] stroke-[4] md:-bottom-14 md:left-40 md:h-[63px] md:w-[302px] md:rotate-[-2.56deg]"
+              viewBox="0 0 108 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1.99931 8.78032C1.99931 8.78032 21.2148 3.73979 52.1342 2.87587C83.0537 2.01195 105.585 7.09068 105.585 7.09068"
+                stroke-linecap="round" />
+            </svg>
           </div>
+        </div>
 
           <p class="mb-10 w-9/10 max-w-80 text-xs md:max-w-224 md:text-xl">
             زمان در یک روز برای ما محدود است، اما مهمترین کار این است که چگونه
@@ -250,7 +177,7 @@
         >
           <!-- feature 1 -->
           <figure
-            class="bg-card-bg border-card-border shadow-card flex flex-col items-center justify-center gap-4 rounded-3xl border py-6 xl:py-10"
+            class="bg-card-bg border-card-border shadow-card flex flex-col items-center justify-center gap-4 rounded-3xl border p-6 xl:p-10"
           >
             <figure class="bg-card-icons-bg rounded-full p-3">
               <svg
@@ -289,270 +216,179 @@
               </svg>
             </figure>
 
-            <div class="flex flex-col items-center gap-2.5 md:gap-4">
-              <h3
-                class="text-card-heading text-xs font-bold md:text-xl dark:text-white"
-              >
-                رابط کاربری جذاب
-              </h3>
-              <p class="mx-6 md:mx-12">
-                اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
-              </p>
-            </div>
-          </figure>
-          <!-- feature 2 -->
-          <figure
-            class="bg-card-bg border-card-border shadow-card flex flex-col items-center justify-center gap-4 rounded-3xl border py-5"
-          >
-            <figure class="bg-card-icons-bg rounded-full p-3">
-              <svg
-                class="stroke-icons-primary h-4 w-4 md:h-6 md:w-6"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3.3335 6.66671H4.66683C6.00016 6.66671 6.66683 6.00004 6.66683 4.66671V3.33337C6.66683 2.00004 6.00016 1.33337 4.66683 1.33337H3.3335C2.00016 1.33337 1.3335 2.00004 1.3335 3.33337V4.66671C1.3335 6.00004 2.00016 6.66671 3.3335 6.66671Z"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M11.3335 6.66671H12.6668C14.0002 6.66671 14.6668 6.00004 14.6668 4.66671V3.33337C14.6668 2.00004 14.0002 1.33337 12.6668 1.33337H11.3335C10.0002 1.33337 9.3335 2.00004 9.3335 3.33337V4.66671C9.3335 6.00004 10.0002 6.66671 11.3335 6.66671Z"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M11.3335 14.6667H12.6668C14.0002 14.6667 14.6668 14 14.6668 12.6667V11.3334C14.6668 10 14.0002 9.33337 12.6668 9.33337H11.3335C10.0002 9.33337 9.3335 10 9.3335 11.3334V12.6667C9.3335 14 10.0002 14.6667 11.3335 14.6667Z"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M3.3335 14.6667H4.66683C6.00016 14.6667 6.66683 14 6.66683 12.6667V11.3334C6.66683 10 6.00016 9.33337 4.66683 9.33337H3.3335C2.00016 9.33337 1.3335 10 1.3335 11.3334V12.6667C1.3335 14 2.00016 14.6667 3.3335 14.6667Z"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </figure>
-            <div class="flex flex-col items-center gap-2.5 md:gap-4">
-              <h3
-                class="text-card-heading text-xs font-bold md:text-xl dark:text-white"
-              >
-                قابلیت دسته‌بندی کارها
-              </h3>
-              <p class="mx-6 md:mx-12">
-                اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
-              </p>
-            </div>
-          </figure>
-          <!-- feature 3 -->
-          <figure
-            class="bg-card-bg border-card-border shadow-card flex flex-col items-center justify-center gap-4 rounded-3xl border py-5"
-          >
-            <figure class="bg-card-icons-bg rounded-full p-3">
-              <svg
-                class="stroke-icons-primary h-4 w-4 md:h-6 md:w-6"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M2.4133 5.66004C3.72664 -0.113291 12.28 -0.106624 13.5866 5.66671C14.3533 9.05338 12.2466 11.92 10.4 13.6934C9.05997 14.9867 6.93997 14.9867 5.5933 13.6934C3.7533 11.92 1.64664 9.04671 2.4133 5.66004Z"
-                />
-                <path
-                  d="M6.1665 7.66667L7.1665 8.66667L9.83317 6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </figure>
-            <div class="flex flex-col items-center gap-2.5 md:gap-4">
-              <h3
-                class="text-card-heading text-xs font-bold md:text-xl dark:text-white"
-              >
-                دسترسی آسان
-              </h3>
-              <p class="mx-6 md:mx-12">
-                اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
-              </p>
-            </div>
-          </figure>
-          <!-- feature 4 -->
-          <figure
-            class="bg-card-bg border-card-border shadow-card flex flex-col items-center justify-center gap-4 rounded-3xl border py-5"
-          >
-            <figure class="bg-card-icons-bg rounded-full p-3">
-              <svg
-                class="stroke-icons-primary h-4 w-4 md:h-6 md:w-6"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 12.5734H11.4933C10.96 12.5734 10.4533 12.78 10.08 13.1534L8.93998 14.28C8.41998 14.7934 7.57334 14.7934 7.05334 14.28L5.91333 13.1534C5.54 12.78 5.02667 12.5734 4.5 12.5734H4C2.89333 12.5734 2 11.6867 2 10.5934V3.31337C2 2.22004 2.89333 1.33337 4 1.33337H12C13.1067 1.33337 14 2.22004 14 3.31337V10.5867C14 11.68 13.1067 12.5734 12 12.5734Z"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M8.04671 5.9667C8.02005 5.9667 7.98003 5.9667 7.9467 5.9667C7.2467 5.94003 6.69336 5.37337 6.69336 4.6667C6.69336 3.9467 7.27337 3.3667 7.99337 3.3667C8.71337 3.3667 9.29338 3.95337 9.29338 4.6667C9.30004 5.37337 8.74671 5.9467 8.04671 5.9667Z"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M6.16646 7.97339C5.2798 8.56672 5.2798 9.53339 6.16646 10.1267C7.17313 10.8001 8.82646 10.8001 9.83313 10.1267C10.7198 9.53339 10.7198 8.56672 9.83313 7.97339C8.82646 7.30672 7.1798 7.30672 6.16646 7.97339Z"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </figure>
-            <div class="flex flex-col items-center gap-2.5 md:gap-4">
-              <h3
-                class="text-card-heading text-xs font-bold md:text-xl dark:text-white"
-              >
-                پشتیبانی آنلاین
-              </h3>
-              <p class="mx-6 md:mx-12">
-                اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
-              </p>
-            </div>
-          </figure>
-        </div>
-      </section>
-      <!----------------------------------------->
-      <!---------- QUERA Download APP ---------->
-      <!----------------------------------------->
-      <section class="relative flex flex-col lg:w-2/3 lg:flex-row">
-        <div
-          class="flex flex-col items-center text-center lg:items-start lg:justify-start lg:gap-5 lg:text-right"
-        >
-          <p
-            class="text-tiny text-default-text lg:text-card-text dark:text-background mb-2 font-normal lg:text-lg"
-          >
-            اپلیکیشن اندروید و ios
-          </p>
-          <h2
-            class="text-on-background font-morraba lg:text-card-heading dark:text-background mb-8 text-xl font-semibold lg:text-4xl lg:font-bold"
-          >
-            دانلود اپلیکیشن
-          </h2>
-
-          <div class="lg:hidden">
-            <img
-              src="../assets/images/Put screen in here(half).png"
-              alt="mobile-screen"
-              class="rounded-2xl bg-gradient-to-b from-[#E5E7E8] to-[#E9EBF1] p-[8px] lg:hidden dark:hidden"
-            />
-            <img
-              src="../assets/images/Statistics-Dark(1).png"
-              alt="mobile-screen"
-              class="hidden rounded-2xl bg-[#2f3132] p-[8px] dark:block"
-            />
-          </div>
-          <div
-            class="text-tiny text-default-text lg:text-card-text mb-10 max-w-xl font-normal break-normal md:w-2/3 lg:w-2/3 lg:text-lg lg:leading-10 dark:text-[#e6e6e6]"
-          >
-            <p>
-              کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر
-              اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر
-              دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن
-              استفاده نمایند.<br />
-              همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از
-              اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
+          <div class="flex flex-col items-center gap-2.5 md:gap-4">
+            <h3 class="text-card-heading text-xs font-bold md:text-xl dark:text-white">
+              رابط کاربری جذاب
+            </h3>
+            <p class="mx-6 md:mx-12">
+              اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
             </p>
           </div>
-          <div class="flex gap-1 text-[#2C7EF8] lg:pr-3">
-            <a src="" class="text-lg font-bold">ورود به اپلیکیشن</a>
-            <img src="../assets/icons/vuesax/linear/arrow-right.svg" />
+        </figure>
+        <!-- feature 2 -->
+        <figure
+          class="bg-card-bg border-card-border py-5 shadow-card flex flex-col items-center justify-center gap-4 rounded-3xl border">
+          <figure class="bg-card-icons-bg rounded-full p-3">
+            <svg class="stroke-icons-primary h-4 w-4 md:h-6 md:w-6" viewBox="0 0 16 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3.3335 6.66671H4.66683C6.00016 6.66671 6.66683 6.00004 6.66683 4.66671V3.33337C6.66683 2.00004 6.00016 1.33337 4.66683 1.33337H3.3335C2.00016 1.33337 1.3335 2.00004 1.3335 3.33337V4.66671C1.3335 6.00004 2.00016 6.66671 3.3335 6.66671Z"
+                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M11.3335 6.66671H12.6668C14.0002 6.66671 14.6668 6.00004 14.6668 4.66671V3.33337C14.6668 2.00004 14.0002 1.33337 12.6668 1.33337H11.3335C10.0002 1.33337 9.3335 2.00004 9.3335 3.33337V4.66671C9.3335 6.00004 10.0002 6.66671 11.3335 6.66671Z"
+                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M11.3335 14.6667H12.6668C14.0002 14.6667 14.6668 14 14.6668 12.6667V11.3334C14.6668 10 14.0002 9.33337 12.6668 9.33337H11.3335C10.0002 9.33337 9.3335 10 9.3335 11.3334V12.6667C9.3335 14 10.0002 14.6667 11.3335 14.6667Z"
+                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M3.3335 14.6667H4.66683C6.00016 14.6667 6.66683 14 6.66683 12.6667V11.3334C6.66683 10 6.00016 9.33337 4.66683 9.33337H3.3335C2.00016 9.33337 1.3335 10 1.3335 11.3334V12.6667C1.3335 14 2.00016 14.6667 3.3335 14.6667Z"
+                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </figure>
+          <div class="flex flex-col items-center gap-2.5 md:gap-4">
+            <h3 class="text-card-heading text-xs font-bold md:text-xl dark:text-white">
+              قابلیت دسته‌بندی کارها
+            </h3>
+            <p class="mx-6 md:mx-12">
+              اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
+            </p>
           </div>
-        </div>
-        <div class="">
-          <img
-            src="../assets/images/image 39129.png"
-            alt="app-screen"
-            class="top-0 left-0 hidden rounded-3xl bg-gradient-to-b from-[#E5E7E8] to-[#E9EBF1] p-0 lg:absolute lg:block dark:hidden"
-          />
-          <img
-            src="../assets/images/Put screen in here (1).png"
-            alt="mobile-screen"
-            class="bottom-20 left-75 hidden rounded-2xl bg-gradient-to-b from-[#E5E7E8] to-[#E9EBF1] p-[8px] lg:absolute lg:block dark:hidden"
-          />
+        </figure>
+        <!-- feature 3 -->
+        <figure
+          class="bg-card-bg border-card-border shadow-card py-5 flex flex-col items-center justify-center gap-4 rounded-3xl border">
+          <figure class="bg-card-icons-bg rounded-full p-3">
+            <svg class="stroke-icons-primary h-4 w-4 md:h-6 md:w-6" viewBox="0 0 16 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.4133 5.66004C3.72664 -0.113291 12.28 -0.106624 13.5866 5.66671C14.3533 9.05338 12.2466 11.92 10.4 13.6934C9.05997 14.9867 6.93997 14.9867 5.5933 13.6934C3.7533 11.92 1.64664 9.04671 2.4133 5.66004Z" />
+              <path d="M6.1665 7.66667L7.1665 8.66667L9.83317 6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </figure>
+          <div class="flex flex-col items-center gap-2.5 md:gap-4">
+            <h3 class="text-card-heading text-xs font-bold md:text-xl dark:text-white">
+              دسترسی آسان
+            </h3>
+            <p class="mx-6 md:mx-12">
+              اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
+            </p>
+          </div>
+        </figure>
+        <!-- feature 4 -->
+        <figure
+          class="bg-card-bg border-card-border py-5 shadow-card flex flex-col items-center justify-center gap-4 rounded-3xl border">
+          <figure class="bg-card-icons-bg rounded-full p-3">
+            <svg class="stroke-icons-primary h-4 w-4 md:h-6 md:w-6" viewBox="0 0 16 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 12.5734H11.4933C10.96 12.5734 10.4533 12.78 10.08 13.1534L8.93998 14.28C8.41998 14.7934 7.57334 14.7934 7.05334 14.28L5.91333 13.1534C5.54 12.78 5.02667 12.5734 4.5 12.5734H4C2.89333 12.5734 2 11.6867 2 10.5934V3.31337C2 2.22004 2.89333 1.33337 4 1.33337H12C13.1067 1.33337 14 2.22004 14 3.31337V10.5867C14 11.68 13.1067 12.5734 12 12.5734Z"
+                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M8.04671 5.9667C8.02005 5.9667 7.98003 5.9667 7.9467 5.9667C7.2467 5.94003 6.69336 5.37337 6.69336 4.6667C6.69336 3.9467 7.27337 3.3667 7.99337 3.3667C8.71337 3.3667 9.29338 3.95337 9.29338 4.6667C9.30004 5.37337 8.74671 5.9467 8.04671 5.9667Z"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M6.16646 7.97339C5.2798 8.56672 5.2798 9.53339 6.16646 10.1267C7.17313 10.8001 8.82646 10.8001 9.83313 10.1267C10.7198 9.53339 10.7198 8.56672 9.83313 7.97339C8.82646 7.30672 7.1798 7.30672 6.16646 7.97339Z"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </figure>
+          <div class="flex flex-col items-center gap-2.5 md:gap-4">
+            <h3 class="text-card-heading text-xs font-bold md:text-xl dark:text-white">
+              پشتیبانی آنلاین
+            </h3>
+            <p class="mx-6 md:mx-12">
+              اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
+            </p>
+          </div>
+        </figure>
+      </div>
+    </section>
+    <!----------------------------------------->
+    <!---------- QUERA Download APP ---------->
+    <!----------------------------------------->
+    <section class="flex flex-col lg:flex-row lg:w-2/3 relative">
+      <div class="flex flex-col text-center items-center lg:justify-start lg:items-start lg:text-right lg:gap-5">
+        <p class="text-tiny text-default-text lg:text-lg font-normal mb-2  lg:text-card-text dark:text-background">
+          اپلیکیشن اندروید و ios
+        </p>
+        <h2
+          class="text-xl font-semibold text-on-background lg:text-4xl lg:font-bold mb-8 font-morraba lg:text-card-heading dark:text-background">
+          دانلود اپلیکیشن</h2>
 
-          <img
-            src="../assets/images/image 39129-dark.png"
-            alt="app-screen"
-            class="absolute top-0 left-0 hidden rounded-3xl bg-[#2f3132] p-0 dark:block"
-          />
-          <img
-            src="../assets/images/Statistics-Dark.png"
-            alt="mobile-screen"
-            class="absolute bottom-0 left-75 hidden rounded-2xl bg-[#2f3132] p-[8px] dark:block"
-          />
+        <div class="lg:hidden">
+          <img src="../assets/images/Put screen in here(half).png" alt="mobile-screen"
+            class="lg:hidden p-[8px] bg-gradient-to-b from-[#E5E7E8] to-[#E9EBF1] rounded-2xl dark:hidden" />
+          <img src="../assets/images/Statistics-Dark(1).png" alt="mobile-screen"
+            class="p-[8px]  bg-[#2f3132] hidden rounded-2xl dark:block" />
         </div>
-      </section>
-      <!----------------------------------------->
-      <!---------- QUERA User Opinion ---------->
-      <!----------------------------------------->
-      <section class="flex max-w-2/3 flex-col items-center justify-center">
-        <div class="flex max-w-xl flex-col gap-6 text-center lg:p-10">
-          <h2
-            class="font-morraba text-card-heading dark:text-background gap-16 text-xl font-semibold lg:text-4xl lg:font-bold"
-          >
-            نظرات کاربران
-          </h2>
-          <p
-            class="text-tiny text-card-text font-normal lg:text-lg dark:text-[#e6e6e6]"
-          >
-            بیش از یک دهه است که کوئرا لیست به مردم در سراسر جهان کمک می‌کند تا
-            سازماندهی شوند و به اهداف خود برسند.
+        <div
+          class="text-tiny text-default-text max-w-xl md:w-2/3 lg:w-2/3 break-normal lg:text-lg font-normal mb-10 lg:leading-10 lg:text-card-text dark:text-[#e6e6e6]">
+          <p>
+            کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند. همچنین کاربران
+            سیستم
+            عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.<br />
+            همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن
+            استفاده
+            نمایند.
           </p>
         </div>
+        <div class="flex gap-1 text-[#2C7EF8] lg:pr-3 ">
+          <a src="" class="font-bold text-lg">ورود به اپلیکیشن</a>
+          <img src="../assets/icons/vuesax/linear/arrow-right.svg">
+        </div>
+      </div>
+      <div class="">
+        <img src="../assets/images/image 39129.png" alt="app-screen"
+          class='hidden lg:block lg:absolute top-0 left-0 bg-gradient-to-b from-[#E5E7E8] to-[#E9EBF1] rounded-3xl p-0 dark:hidden'>
+        <img src="../assets/images/Put screen in here (1).png" alt="mobile-screen"
+          class="hidden lg:block lg:absolute left-75 bottom-20 p-[8px] bg-gradient-to-b from-[#E5E7E8] to-[#E9EBF1] rounded-2xl dark:hidden" />
+
+        <img src="../assets/images/image 39129-dark.png" alt="app-screen"
+          class='absolute top-0 left-0 bg-[#2f3132] rounded-3xl p-0 hidden dark:block'>
+        <img src="../assets/images/Statistics-Dark.png" alt="mobile-screen"
+          class="absolute left-75 bottom-0 p-[8px]  bg-[#2f3132] hidden rounded-2xl dark:block" />
+      </div>
+    </section>
+    <!----------------------------------------->
+    <!---------- QUERA User Opinion ---------->
+    <!----------------------------------------->
+    <section class="flex flex-col items-center justify-center max-w-2/3">
+      <div class="flex flex-col gap-6 text-center max-w-xl lg:p-10">
+        <h2
+          class="text-xl font-semibold font-morraba text-card-heading lg:text-4xl lg:font-bold gap-16 dark:text-background">
+          نظرات کاربران
+        </h2>
+        <p class="text-tiny lg:text-lg font-normal text-card-text dark:text-[#e6e6e6]">
+          بیش از یک دهه است که کوئرا لیست به مردم در سراسر جهان کمک می‌کند تا سازماندهی شوند و به اهداف خود برسند.
+        </p>
+      </div>
 
         <!-- Opinion's Cards -->
 
-        <div
-          id="slideContainer"
-          class="flex flex-wrap items-start gap-6 lg:grid lg:grid-cols-3"
-        >
-          <!-- figure 1 -->
 
-          <figure
-            class="bg-background shadow-card flex-1 justify-center gap-4 rounded-2xl px-8 py-6 dark:bg-[#0B192D]"
-          >
-            <div class="flex items-center gap-5">
-              <img
-                src="../assets/images/profile-photo.png"
-                alt="profile-photo"
-                class="h-[68px] w-[68px] rounded-full object-cover"
-              />
-              <div>
-                <h2
-                  class="text-card-heading dark:text-background font-morraba pb-1 text-sm font-bold lg:text-base"
-                >
-                  رویا ملکی
-                </h2>
-                <p
-                  class="text-card-text-light text-xs font-normal lg:text-sm dark:text-[#e6e6e6]"
-                >
-                  مهندس نرم‌افزار دیجی کالا
-                </p>
-              </div>
-            </div>
+      <div id="slideContainer" class="flex flex-wrap lg:grid lg:grid-cols-3 gap-6 items-start">
+
+        <!-- figure 1 -->
+
+        <figure class="bg-background dark:bg-[#0B192D] rounded-2xl px-8 py-6 gap-4 justify-center shadow-card flex-1">
+          <div class="flex gap-5 items-center">
+            <img src="../assets/images/profile-photo.png" alt="profile-photo"
+              class="w-[68px] h-[68px] object-cover rounded-full" />
             <div>
-              <p
-                class="text-card-text text-xs leading-relaxed font-light lg:text-base dark:text-[#e6e6e6]"
-              >
-                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی
-                اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این
-                امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی
-                کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از
-                یکپارچگی اطلاعات و دیتاها لذت ببریم.ّ
-              </p>
+              <h2 class="text-card-heading dark:text-background font-morraba font-bold text-sm lg:text-base pb-1">رویا
+                ملکی</h2>
+              <p class="text-card-text-light dark:text-[#e6e6e6] font-normal text-xs lg:text-sm">مهندس نرم‌افزار دیجی
+                کالا</p>
             </div>
-          </figure>
+          </div>
+          <div>
+            <p class="text-card-text dark:text-[#e6e6e6] text-xs lg:text-base font-light leading-relaxed">
+              تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده
+              از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین
+              همه
+              چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.ّ
+            </p>
+          </div>
+        </figure>
 
           <!-- figure 2 -->
 
@@ -579,52 +415,42 @@
               </div>
             </div>
             <div>
-              <p
-                class="text-card-text text-xs leading-relaxed font-light lg:text-base dark:text-[#e6e6e6]"
-              >
-                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی
-                اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این
-                امکان رو می‌دهد که سریع تر باشیم
-              </p>
+              <h2 class="text-card-heading dark:text-background font-morraba font-bold text-sm lg:text-base pb-1">رویا
+                ملکی</h2>
+              <p class="text-card-text-light dark:text-[#e6e6e6] font-normal text-xs lg:text-sm">مهندس نرم‌افزار دیجی
+                کالا</p>
             </div>
-          </figure>
+          </div>
+          <div>
+            <p class="text-card-text dark:text-[#e6e6e6] text-xs lg:text-base font-light leading-relaxed">
+              تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده
+              از کوئرا لیست به ما این امکان رو می‌دهد که سریع تر باشیم </p>
+          </div>
+        </figure>
 
           <!-- figure 3 -->
 
-          <figure
-            class="bg-background shadow-card flex flex-1 flex-col justify-center gap-4 rounded-2xl px-8 py-6 dark:bg-[#0B192D]"
-          >
-            <div class="flex items-center gap-5">
-              <img
-                src="../assets/images/profile-photo4.png"
-                alt="profile-photo"
-                class="h-[68px] w-[68px] rounded-full object-cover"
-              />
-              <div>
-                <h2
-                  class="text-card-heading dark:text-background font-morraba pb-1 text-sm font-bold lg:text-base"
-                >
-                  رویا ملکی
-                </h2>
-                <p
-                  class="text-card-text-light text-xs font-normal lg:text-sm dark:text-[#e6e6e6]"
-                >
-                  مهندس نرم‌افزار دیجی کالا
-                </p>
-              </div>
-            </div>
+        <figure
+          class="flex flex-col bg-background dark:bg-[#0B192D] rounded-2xl px-8 py-6 gap-4 justify-center shadow-card flex-1">
+          <div class="flex gap-5 items-center">
+            <img src="../assets/images/profile-photo4.png" alt="profile-photo"
+              class="w-[68px] h-[68px] object-cover rounded-full" />
             <div>
-              <p
-                class="text-card-text text-xs leading-relaxed font-light lg:text-base dark:text-[#e6e6e6]"
-              >
-                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی
-                اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این
-                امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی
-                کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از
-                یکپارچگی اطلاعات و دیتاها لذت ببریم.ّ
-              </p>
+              <h2 class="text-card-heading dark:text-background font-morraba font-bold text-sm lg:text-base pb-1">رویا
+                ملکی</h2>
+              <p class="text-card-text-light dark:text-[#e6e6e6] font-normal text-xs lg:text-sm">مهندس نرم‌افزار دیجی
+                کالا</p>
             </div>
-          </figure>
+          </div>
+          <div>
+            <p class="text-card-text dark:text-[#e6e6e6] text-xs lg:text-base font-light leading-relaxed">
+              تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده
+              از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین
+              همه
+              چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.ّ
+            </p>
+          </div>
+        </figure>
 
           <!-- figure 4 -->
 
@@ -651,52 +477,42 @@
               </div>
             </div>
             <div>
-              <p
-                class="text-card-text text-xs leading-relaxed font-light lg:text-base dark:text-[#e6e6e6]"
-              >
-                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی
-                اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این
-                امکان رو می‌دهد که سریع تر باشیم
-              </p>
+              <h2 class="text-card-heading dark:text-background font-morraba font-bold text-sm lg:text-base pb-1">رویا
+                ملکی</h2>
+              <p class="text-card-text-light dark:text-[#e6e6e6] font-normal text-xs lg:text-sm">مهندس نرم‌افزار دیجی
+                کالا</p>
             </div>
-          </figure>
+          </div>
+          <div>
+            <p class="text-card-text dark:text-[#e6e6e6] text-xs lg:text-base font-light leading-relaxed">
+              تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده
+              از کوئرا لیست به ما این امکان رو می‌دهد که سریع تر باشیم </p>
+          </div>
+        </figure>
 
           <!-- figure 5 -->
 
-          <figure
-            class="bg-background shadow-card flex flex-1 flex-col justify-center gap-4 rounded-2xl px-8 py-6 dark:bg-[#0B192D]"
-          >
-            <div class="flex items-center gap-5">
-              <img
-                src="../assets/images/77dd64be56b77b645113191065f1ff7b.png"
-                alt="profile-photo"
-                class="h-[68px] w-[68px] rounded-full object-cover"
-              />
-              <div>
-                <h2
-                  class="text-card-heading dark:text-background font-morraba pb-1 text-sm font-bold lg:text-base"
-                >
-                  رویا ملکی
-                </h2>
-                <p
-                  class="text-card-text-light text-xs font-normal lg:text-sm dark:text-[#e6e6e6]"
-                >
-                  مهندس نرم‌افزار دیجی کالا
-                </p>
-              </div>
-            </div>
+        <figure
+          class="flex flex-col bg-background dark:bg-[#0B192D] rounded-2xl px-8 py-6 gap-4 justify-center shadow-card flex-1">
+          <div class="flex gap-5 items-center">
+            <img src="../assets/images/77dd64be56b77b645113191065f1ff7b.png" alt="profile-photo"
+              class="w-[68px] h-[68px] object-cover rounded-full" />
             <div>
-              <p
-                class="text-card-text text-xs leading-relaxed font-light lg:text-base dark:text-[#e6e6e6]"
-              >
-                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی
-                اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این
-                امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی
-                کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از
-                یکپارچگی اطلاعات و دیتاها لذت ببریم.ّ
-              </p>
+              <h2 class="text-card-heading dark:text-background font-morraba font-bold text-sm lg:text-base pb-1">رویا
+                ملکی</h2>
+              <p class="text-card-text-light dark:text-[#e6e6e6] font-normal text-xs lg:text-sm">مهندس نرم‌افزار دیجی
+                کالا</p>
             </div>
-          </figure>
+          </div>
+          <div>
+            <p class="text-card-text dark:text-[#e6e6e6] text-xs lg:text-base font-light leading-relaxed">
+              تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده
+              از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین
+              همه
+              چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.ّ
+            </p>
+          </div>
+        </figure>
 
           <!-- figure 6 -->
 
@@ -723,51 +539,41 @@
               </div>
             </div>
             <div>
-              <p
-                class="text-card-text text-xs leading-relaxed font-light lg:text-base dark:text-[#e6e6e6]"
-              >
-                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی
-                اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این
-                امکان رو می‌دهد که سریع تر باشیم
-              </p>
+              <h2 class="text-card-heading dark:text-background font-morraba font-bold text-sm lg:text-base pb-1">رویا
+                ملکی</h2>
+              <p class="text-card-text-light dark:text-[#e6e6e6] font-normal text-xs lg:text-sm">مهندس نرم‌افزار دیجی
+                کالا</p>
             </div>
-          </figure>
-        </div>
-        <div class="flex justify-between gap-10 p-10">
-          <button
-            class="flex items-center rounded-md border border-[#E3E6E8] p-2.5 hover:cursor-pointer dark:border-[#293242]"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="dark:text-background h-5 w-5"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-          <button
-            class="flex rotate-180 items-center rounded-md border border-[#E3E6E8] p-2.5 hover:cursor-pointer dark:border-[#293242]"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="dark:text-background h-5 w-5"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-        </div>
-      </section>
-    </main>
-  </body>
+          </div>
+          <div>
+            <p class="text-card-text dark:text-[#e6e6e6] text-xs lg:text-base font-light leading-relaxed">
+              تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده
+              از کوئرا لیست به ما این امکان رو می‌دهد که سریع تر باشیم </p>
+          </div>
+        </figure>
+      </div>
+      <div class="flex justify-between p-10 gap-10">
+        <button
+          class="flex items-center border border-[#E3E6E8] dark:border-[#293242] p-2.5 rounded-md hover:cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 dark:text-background" viewBox="0 0 20 20"
+            fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <button
+          class="flex items-center rotate-180 border border-[#E3E6E8] dark:border-[#293242] p-2.5 rounded-md hover:cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 dark:text-background" viewBox="0 0 20 20"
+            fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
